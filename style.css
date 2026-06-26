@@ -1,0 +1,150 @@
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    background:#f4e7cf;
+    color:#50321a;
+
+    font-family:"Noto Sans JP",sans-serif;
+
+}
+
+
+/*=========================
+        Sidebar
+=========================*/
+
+#sidebar{
+
+    position:fixed;
+
+    right:0;
+
+    top:0;
+
+    width:180px;
+
+    height:100vh;
+
+    background:linear-gradient(#df7c24,#c76011);
+
+    display:flex;
+
+    align-items:center;
+
+    z-index:100;
+
+}
+
+#sidebar ul{
+
+    width:100%;
+    list-style:none;
+
+}
+
+#sidebar li{
+
+    margin:25px 0;
+
+    text-align:center;
+
+}
+
+#sidebar a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    letter-spacing:2px;
+
+    transition:.3s;
+
+}
+
+#sidebar a:hover{
+
+    color:#ffe08a;
+
+}
+
+/*=========================
+        Top
+=========================*/
+
+#top{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding-right:180px;
+
+    background:url("img/paper.jpg");
+
+    background-size:cover;
+
+}
+
+.hero{
+
+    width:1100px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.hero-text h1{
+
+    font-size:72px;
+
+}
+
+.hero-text span{
+
+    display:block;
+
+    font-size:48px;
+
+    font-family:"Playfair Display",serif;
+
+    color:#a94f12;
+
+}
+
+.hero-text h2{
+
+    margin-top:40px;
+
+    font-size:28px;
+
+}
+
+.hero-image img{
+
+    width:380px;
+
+}
