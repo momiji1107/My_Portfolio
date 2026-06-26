@@ -78,3 +78,47 @@ tabs.forEach(tab=>{
     });
 
 });
+
+/*==========================
+    Image Slider
+==========================*/
+
+document.querySelectorAll(".slider").forEach(slider=>{
+
+    const slides=slider.querySelectorAll(".slide");
+
+    const prev=slider.querySelector(".prev");
+
+    const next=slider.querySelector(".next");
+
+    let index=0;
+
+    function show(i){
+
+        slides.forEach(s=>s.classList.remove("active-slide"));
+
+        slides[i].classList.add("active-slide");
+
+    }
+
+    prev.addEventListener("click",()=>{
+
+        index--;
+
+        if(index<0) index=slides.length-1;
+
+        show(index);
+
+    });
+
+    next.addEventListener("click",()=>{
+
+        index++;
+
+        if(index>=slides.length) index=0;
+
+        show(index);
+
+    });
+
+});
