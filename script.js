@@ -196,3 +196,34 @@ cards.forEach(card=>{
     });
 
 });
+
+/*==========================
+    Tilt Animation
+==========================*/
+
+document.querySelectorAll(
+
+".paper,.paper-front,.skill-card"
+
+).forEach(card=>{
+
+    card.addEventListener("mousemove",(e)=>{
+
+        const x=e.offsetX/card.clientWidth-.5;
+
+        const y=e.offsetY/card.clientHeight-.5;
+
+        card.style.transform=
+
+        `rotate(${x*2}deg)
+         translateY(${y*6}px)`;
+
+    });
+
+    card.addEventListener("mouseleave",()=>{
+
+        card.style.transform="";
+
+    });
+
+});

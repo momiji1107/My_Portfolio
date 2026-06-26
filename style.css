@@ -1534,3 +1534,187 @@ section::after{
     transform:scale(1.05);
 
 }
+
+/*==========================
+    クラフト紙
+==========================*/
+
+body{
+
+    background:
+
+    url(img/paper.jpg),
+
+    #efe2c6;
+
+    background-size:500px;
+
+}
+
+/*==========================
+    セクション区切り
+==========================*/
+
+section{
+
+    border-bottom:4px dashed
+
+    rgba(201,121,35,.18);
+
+}
+
+/*==========================
+    ポラロイド
+==========================*/
+
+.work-images{
+
+    background:white;
+
+    padding:18px 18px 50px;
+
+    transform:rotate(-2deg);
+
+    box-shadow:
+
+    0 8px 20px rgba(0,0,0,.2);
+
+}
+
+.work-images::after{
+
+    content:"Summer Game";
+
+    display:block;
+
+    text-align:center;
+
+    margin-top:12px;
+
+    font-family:cursive;
+
+    color:#666;
+
+}
+
+/*==========================
+        メモ
+==========================*/
+
+.memo{
+
+    margin-top:35px;
+
+    background:#fff4a7;
+
+    display:inline-block;
+
+    padding:20px;
+
+    transform:rotate(-3deg);
+
+    box-shadow:
+
+    4px 4px 10px rgba(0,0,0,.15);
+
+}
+
+/*==========================
+    スタンプ
+==========================*/
+
+.stamp{
+
+    position:absolute;
+
+    right:250px;
+
+    top:140px;
+
+    width:180px;
+
+    height:180px;
+
+    border-radius:50%;
+
+    border:6px solid #cf6d20;
+
+    color:#cf6d20;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    transform:
+
+    rotate(-18deg);
+
+    opacity:.18;
+
+    font-size:26px;
+
+    font-weight:bold;
+
+}
+
+/*==========================
+    ラベル
+==========================*/
+
+.section-title{
+
+    position:relative;
+
+}
+
+.section-title::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:-40px;
+
+    top:18px;
+
+    width:22px;
+
+    height:22px;
+
+    background:#d16f1f;
+
+    border-radius:50%;
+
+}
+
+/*==========================
+    手書き風
+==========================*/
+
+.section-title span{
+
+    font-family:
+
+    "Comic Sans MS",
+
+    cursive;
+
+}
+
+.work-card:nth-child(even){
+
+    transform:
+
+    rotate(1deg);
+
+}
+
+.work-card:nth-child(odd){
+
+    transform:
+
+    rotate(-1deg);
+
+}
