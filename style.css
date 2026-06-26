@@ -1336,3 +1336,201 @@ body{
     transform:translateY(-5px);
 
 }
+
+/*==========================
+        Scrap Style
+==========================*/
+
+.paper,
+.paper-front,
+.skill-card,
+.news-card,
+.contact-paper{
+
+    transition:.4s;
+
+}
+
+.paper:hover{
+
+    transform:rotate(-0.4deg) scale(1.01);
+
+}
+
+.paper-front:hover{
+
+    transform:rotate(0.5deg);
+
+}
+
+.skill-card:nth-child(odd){
+
+    transform:rotate(-1deg);
+
+}
+
+.skill-card:nth-child(even){
+
+    transform:rotate(1deg);
+
+}
+
+.news-card:nth-child(odd){
+
+    transform:rotate(-0.5deg);
+
+}
+
+.news-card:nth-child(even){
+
+    transform:rotate(.5deg);
+
+}
+
+/*==========================
+    Notebook Shadow
+==========================*/
+
+.paper::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:-25px;
+
+    top:0;
+
+    width:8px;
+
+    height:100%;
+
+    background:
+
+    repeating-linear-gradient(
+
+    to bottom,
+
+    #d96d17 0,
+
+    #d96d17 12px,
+
+    transparent 12px,
+
+    transparent 28px
+
+    );
+
+}
+
+/*==========================
+        Scroll Bar
+==========================*/
+
+::-webkit-scrollbar{
+
+    width:12px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#efe1c7;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#d77422;
+
+    border-radius:30px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#b95e17;
+
+}
+
+/*==========================
+        Decoration
+==========================*/
+
+section{
+
+    position:relative;
+
+}
+
+section::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:130px;
+
+    height:130px;
+
+    background:url(img/maple.png);
+
+    background-size:contain;
+
+    opacity:.08;
+
+    right:60px;
+
+    bottom:40px;
+
+}
+
+/*==========================
+        Fade Delay
+==========================*/
+
+.fade{
+
+    transition:
+
+    opacity 1s,
+
+    transform 1s;
+
+}
+
+.skill-card{
+
+    transition:
+
+    transform .4s,
+
+    box-shadow .4s;
+
+}
+
+.skill-card:hover{
+
+    box-shadow:
+
+    0 18px 40px rgba(0,0,0,.15);
+
+}
+
+.work-card{
+
+    overflow:hidden;
+
+}
+
+.work-images img{
+
+    transition:.4s;
+
+}
+
+.work-images img:hover{
+
+    transform:scale(1.05);
+
+}

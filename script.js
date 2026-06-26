@@ -149,3 +149,50 @@ form.addEventListener("submit",function(e){
     form.reset();
 
 });
+
+/*==========================
+    Parallax Maple
+==========================*/
+
+const leaves=document.querySelectorAll(".leaf");
+
+window.addEventListener("scroll",()=>{
+
+    const y=window.scrollY;
+
+    leaves.forEach((leaf,index)=>{
+
+        leaf.style.transform=
+
+        `translateY(${y*(0.08+index*0.03)}px)
+         rotate(${y*0.03}deg)`;
+
+    });
+
+});
+
+/*==========================
+    Card Animation
+==========================*/
+
+const cards=document.querySelectorAll(
+
+".skill-card,.news-card,.work-card"
+
+);
+
+cards.forEach(card=>{
+
+    card.addEventListener("mouseenter",()=>{
+
+        card.style.zIndex=10;
+
+    });
+
+    card.addEventListener("mouseleave",()=>{
+
+        card.style.zIndex=1;
+
+    });
+
+});
