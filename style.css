@@ -889,3 +889,113 @@ body{
     right:10px;
 
 }
+
+/*==========================
+        Skills
+==========================*/
+
+#skills{
+
+    padding:150px 0;
+
+}
+
+.skills-container{
+
+    width:1100px;
+
+    margin:auto;
+
+}
+
+.skill-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:40px;
+
+}
+
+.skill-card{
+
+    position:relative;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 30px rgba(0,0,0,.12);
+
+    transition:.3s;
+
+}
+
+.skill-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.skill-card h3{
+
+    color:#c86418;
+
+    margin-bottom:30px;
+
+    font-size:30px;
+
+}
+
+.skill-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    padding:12px 0;
+
+    border-bottom:1px dashed #ddd;
+
+}
+
+.level{
+
+    color:#f0a300;
+
+    letter-spacing:2px;
+
+    font-size:18px;
+
+}
+
+.skill-item span{
+
+    font-weight:bold;
+
+}
+
+.skill-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    right:20px;
+
+    bottom:20px;
+
+    width:60px;
+
+    height:60px;
+
+    background:url("img/maple.png");
+
+    background-size:contain;
+
+    opacity:.15;
+
+}
