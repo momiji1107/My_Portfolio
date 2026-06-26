@@ -62,11 +62,11 @@
 
         <li>
 
-            <a href="#works">
+            <a href="#news">
 
-            <span>03</span>
+            <span>05</span>
 
-            WORKS
+            NEWS
 
             </a>
 
@@ -86,11 +86,11 @@
 
         <li>
 
-            <a href="#news">
+            <a href="#works">
 
-            <span>05</span>
+            <span>03</span>
 
-            NEWS
+            WORKS
 
             </a>
 
@@ -111,8 +111,6 @@
     </ul>
 
 </nav>
-
-
 
 <!--==========================
     TOP
@@ -150,7 +148,7 @@
 
         <div class="circle"></div>
 
-        <img src="img/profile.png" alt="character">
+        <img src="img/profile.png" alt="profile image character">
 
     </div>
 
@@ -165,8 +163,6 @@
 </section>
 
 
-
-
 <!--==========================
     Profile
 ===========================-->
@@ -176,9 +172,9 @@
     <div class="paper">
         <div class="clip"></div>
 
-        <div class="tape tape1"></div>
+        <div class="tape tape-left"></div>
 
-        <div class="tape tape2"></div>
+        <div class="tape tape-right"></div>
 
         <div class="profile-left">
 
@@ -186,13 +182,17 @@
 
             <h2>Profile</h2>
 
-            <span>About Me</span>  
+            <span>自己紹介</span>  
 
         </div>
 
             <p>
 
                 ゲームクリエイターを目指す大学生。
+            
+            </p>
+
+            <p>
 
                 幼い頃からものづくりが好きで、
 
@@ -210,13 +210,13 @@
 
             <div class="sns">
 
-                <a href="#">GitHub</a>
+                <a href="https://github.com/momiji1107" target="_blank">GitHub</a>
 
-                <a href="#">YouTube</a>
+                <a href="https://www.youtube.com/@MomijiGame">YouTube</a>
 
-                <a href="#">X(旧Twitter)</a>
+                <a href="https://x.com/momijiGameUnity" target="_blank">X(旧Twitter)</a>
 
-                <a href="#">Discord</a>
+                <a href="https://discord.gg/BxEndaE6" target="_blank">Discord</a>
 
             </div>
 
@@ -224,7 +224,7 @@
 
         <div class="profile-right">
 
-            <img src="img/profile.png">
+            <img src="img/profile.png" alt="プロフィール画像">
 
         </div>
 
@@ -232,130 +232,111 @@
 
 </section>
 
+<!--==========================
+    NEWS
+===========================-->
 
+<section id="news">
 
-<section id="works">
-
-    <div class="works-container fade">
+    <div class="news-container fade">
 
         <div class="section-title">
 
-            <h2>Works</h2>
+            <h2>News</h2>
 
-            <span>制作実績</span>
-
-        </div>
-
-        <div class="works-tab">
-
-            <button class="tab active" data-target="game">
-                Game
-            </button>
-
-            <button class="tab" data-target="plan">
-                Planning
-            </button>
+            <span>お知らせ</span>
 
         </div>
 
-        <!--======================
-            GAME
-        =======================-->
+        <div class="news-list">
 
-        <div class="works-page active-page" id="game">
+            <article class="news-card">
 
-            <div class="work-card">
+                <div class="news-date">
 
-                <div class="paper-back"></div>
-
-                <div class="paper-front">
-
-                    <div class="clip small"></div>
-
-                    <div class="tape tape-left"></div>
-
-                    <div class="tape tape-right"></div>
-
-                    <div class="work-images">
-
-                        <div class="slider">
-
-                            <img src="img/work1.jpg" class="slide active-slide">
-
-                            <img src="img/work2.jpg" class="slide">
-
-                            <button class="prev">◀</button>
-
-                            <button class="next">▶</button>
-
-                        </div>
-
-                    </div>
-
-                    <div class="work-info">
-
-                        <h3>作品タイトル</h3>
-
-                        <p>
-                            Unityで制作したゲームです。
-                            ここに作品紹介を書きます。
-                        </p>
-
-                        <div class="work-tags">
-
-                            <span>4人制作</span>
-
-                            <span>3か月</span>
-
-                            <span>プログラム担当</span>
-
-                        </div>
-
-                        <div class="work-buttons">
-
-                            <a href="#">GitHub</a>
-
-                            <a href="#">詳しく見る</a>
-
-                        </div>
-
-                    </div>
+                    2026.06.26
 
                 </div>
 
-            </div>
+                <div class="news-content">
 
-        </div>
+                    <h3>
 
-        <!--======================
-            Planning
-        =======================-->
+                        ポートフォリオサイトを公開しました
 
-        <div class="works-page" id="plan">
-
-            <div class="work-card">
-
-                <div class="work-images">
-
-                    <img src="img/work3.jpg">
-
-                    <img src="img/work4.jpg">
-
-                </div>
-
-                <div class="work-info">
-
-                    <h3>企画作品</h3>
+                    </h3>
 
                     <p>
 
-                        ゲーム企画書などを掲載します。
+                        サイトのデザインをリニューアルしました。
 
                     </p>
 
                 </div>
 
-            </div>
+            </article>
+
+            <article class="news-card">
+
+                <div class="news-date">
+
+                    2026.06.15
+
+                </div>
+
+                <div class="news-content">
+
+                    <h3>
+
+                        新しいゲーム作品を追加しました
+
+                    </h3>
+
+                    <p>
+
+                        Unityで制作したゲームをWorksに掲載しました。
+
+                    </p>
+
+                </div>
+
+            </article>
+
+            <article class="news-card">
+
+                <div class="news-date">
+
+                    2026.05.30
+
+                </div>
+
+                <div class="news-content">
+
+                    <h3>
+
+                        コミックマーケット出展決定
+
+                    </h3>
+
+                    <p>
+
+                        制作中ゲームを展示予定です。
+
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+        <div class="news-more">
+
+            <a href="#">
+
+                もっと見る →
+
+            </a>
 
         </div>
 
@@ -363,6 +344,9 @@
 
 </section>
 
+<!--==========================
+    SKILLS
+===========================-->
 
 <section id="skills">
 
@@ -596,113 +580,138 @@
 
 </section>
 
-<section id="news">
+<!--==========================
+    WORKS
+===========================-->
 
-    <div class="news-container fade">
+<section id="works">
+
+    <div class="works-container fade">
 
         <div class="section-title">
 
-            <h2>News</h2>
+            <h2>Works</h2>
 
-            <span>お知らせ</span>
-
-        </div>
-
-        <div class="news-list">
-
-            <article class="news-card">
-
-                <div class="news-date">
-
-                    2026.06.26
-
-                </div>
-
-                <div class="news-content">
-
-                    <h3>
-
-                        ポートフォリオサイトを公開しました
-
-                    </h3>
-
-                    <p>
-
-                        サイトのデザインをリニューアルしました。
-
-                    </p>
-
-                </div>
-
-            </article>
-
-            <article class="news-card">
-
-                <div class="news-date">
-
-                    2026.06.15
-
-                </div>
-
-                <div class="news-content">
-
-                    <h3>
-
-                        新しいゲーム作品を追加しました
-
-                    </h3>
-
-                    <p>
-
-                        Unityで制作したゲームをWorksに掲載しました。
-
-                    </p>
-
-                </div>
-
-            </article>
-
-            <article class="news-card">
-
-                <div class="news-date">
-
-                    2026.05.30
-
-                </div>
-
-                <div class="news-content">
-
-                    <h3>
-
-                        コミックマーケット出展決定
-
-                    </h3>
-
-                    <p>
-
-                        制作中ゲームを展示予定です。
-
-                    </p>
-
-                </div>
-
-            </article>
+            <span>制作実績</span>
 
         </div>
 
-        <div class="news-more">
+        <div class="works-tab">
 
-            <a href="#">
+            <button class="tab active" data-target="game">
+                Game
+            </button>
 
-                もっと見る →
+            <button class="tab" data-target="plan">
+                Planning
+            </button>
 
-            </a>
+        </div>
+
+        <!--======================
+            GAME
+        =======================-->
+
+        <div class="works-page active-page" id="game">
+
+            <div class="work-card">
+
+                <div class="paper-back"></div>
+
+                <div class="paper-front">
+
+                    <div class="clip small"></div>
+
+                    <div class="work-images">
+
+                        <div class="slider">
+
+                            <img src="img/work1.jpg" class="slide active-slide">
+
+                            <img src="img/work2.jpg" class="slide">
+
+                            <button class="prev">◀</button>
+
+                            <button class="next">▶</button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="work-info">
+
+                        <h3>作品タイトル</h3>
+
+                        <p>
+                            Unityで制作したゲームです。
+                            ここに作品紹介を書きます。
+                        </p>
+
+                        <div class="work-tags">
+
+                            <span>4人制作</span>
+
+                            <span>3か月</span>
+
+                            <span>プログラム担当</span>
+
+                        </div>
+
+                        <div class="work-buttons">
+
+                            <a href="#">GitHub</a>
+
+                            <a href="#">詳しく見る</a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--======================
+            Planning
+        =======================-->
+
+        <div class="works-page" id="plan">
+
+            <div class="work-card">
+
+                <div class="work-images">
+
+                    <img src="img/work3.jpg">
+
+                    <img src="img/work4.jpg">
+
+                </div>
+
+                <div class="work-info">
+
+                    <h3>企画作品</h3>
+
+                    <p>
+
+                        ゲーム企画書などを掲載します。
+
+                    </p>
+
+                </div>
+
+            </div>
 
         </div>
 
     </div>
 
 </section>
+
+<!--==========================
+    CONTACT
+===========================-->
 
 <section id="contact">
 
@@ -720,10 +729,6 @@
 
             <div class="clip small"></div>
 
-            <div class="tape tape-left"></div>
-
-            <div class="tape tape-right"></div>
-
             <div class="contact-left">
 
                 <h3>お気軽にご連絡ください</h3>
@@ -734,16 +739,6 @@
                     お気軽にお問い合わせください。
 
                 </p>
-
-                <div class="contact-sns">
-
-                    <a href="#">GitHub</a>
-
-                    <a href="#">X(旧Twitter)</a>
-
-                    <a href="#">YouTube</a>
-
-                </div>
 
             </div>
 
@@ -767,7 +762,7 @@
 
                     <button type="submit">
 
-                        SEND
+                        送信する
 
                     </button>
 

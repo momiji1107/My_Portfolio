@@ -90,12 +90,34 @@ body{
 
     transition:.3s;
 
+    position:relative;
+
+    display:inline-block;
+
+    padding:6px 0;
+
 }
 
 #sidebar a:hover{
 
-    color:#ffe08a;
+    color:#ff6633;
     transform:scale(1.08);
+
+}
+
+#sidebar a.active{
+
+    color:#ffe79b;
+
+}
+
+#sidebar a.active::before{
+
+    content:"🍁";
+
+    position:absolute;
+
+    left:-30px;
 
 }
 
@@ -131,6 +153,10 @@ body{
 
 }
 
+/*==========================
+        Hero
+==========================*/
+
 .hero{
 
     width:1100px;
@@ -140,6 +166,8 @@ body{
     justify-content:space-between;
 
     align-items:center;
+
+    gap:120px;
 
 }
 
@@ -169,9 +197,21 @@ body{
 
 }
 
+.hero-image{
+
+    position:relative;
+
+}
+
 .hero-image img{
 
     width:380px;
+
+    position:relative;
+
+    width:380px;
+
+    z-index:2;
 
 }
 
@@ -221,18 +261,6 @@ body{
 
 }
 
-.hero{
-
-    gap:120px;
-
-}
-
-.hero-image{
-
-    position:relative;
-
-}
-
 .circle{
 
     position:absolute;
@@ -253,15 +281,21 @@ body{
 
 }
 
-.hero-image img{
+.sub-title{
 
-    position:relative;
+    color:#cb7b33;
 
-    width:380px;
+    letter-spacing:6px;
 
-    z-index:2;
+    font-weight:bold;
+
+    margin-bottom:20px;
 
 }
+
+/*==========================
+        ノート背景
+==========================*/
 
 .paper{
 
@@ -281,6 +315,23 @@ body{
 
     0 15px 40px rgba(0,0,0,.15);
 
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background-image:
+
+    repeating-linear-gradient(
+
+        transparent,
+
+        transparent 34px,
+
+        rgba(255,170,80,.15) 35px
+
+    );
 }
 
 .clip{
@@ -315,37 +366,13 @@ body{
 
 }
 
-.tape1{
-
-    left:170px;
-
-    top:-12px;
-
-}
-
-.tape2{
-
-    right:120px;
-
-    top:-12px;
-
-    transform:rotate(12deg);
-
-}
+/*=========================
+        Profile
+=========================*/
 
 #profile{
 
     padding:150px 0;
-
-}
-
-.paper{
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
 
 }
 
@@ -401,49 +428,21 @@ body{
 
 }
 
-#sidebar a{
+.tape-left{
 
-    position:relative;
+    left:170px;
 
-    display:inline-block;
-
-    padding:6px 0;
+    top:-12px;
 
 }
 
-#sidebar a.active{
+.tape-right{
 
-    color:#ffe79b;
+    right:120px;
 
-}
+    top:-12px;
 
-#sidebar a.active::before{
-
-    content:"🍁";
-
-    position:absolute;
-
-    left:-30px;
-
-}
-
-/*==========================
-        ノート背景
-==========================*/
-
-.paper{
-
-    background-image:
-
-    repeating-linear-gradient(
-
-        transparent,
-
-        transparent 34px,
-
-        rgba(255,170,80,.15) 35px
-
-    );
+    transform:rotate(12deg);
 
 }
 
@@ -476,50 +475,6 @@ body{
     font-size:20px;
 
     letter-spacing:5px;
-
-}
-
-/*==========================
-        Hero
-==========================*/
-
-.sub-title{
-
-    color:#cb7b33;
-
-    letter-spacing:6px;
-
-    font-weight:bold;
-
-    margin-bottom:20px;
-
-}
-
-.scroll-btn{
-
-    display:inline-block;
-
-    margin-top:60px;
-
-    text-decoration:none;
-
-    color:white;
-
-    background:#d87422;
-
-    padding:15px 35px;
-
-    border-radius:50px;
-
-    transition:.3s;
-
-}
-
-.scroll-btn:hover{
-
-    background:#ec9449;
-
-    transform:translateY(-5px);
 
 }
 
@@ -621,7 +576,7 @@ body{
 
 .tab.active{
 
-    background:#a84e0c;
+    background:#cc0000;
 
 }
 
