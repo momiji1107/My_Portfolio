@@ -19,6 +19,14 @@ body{
 
     font-family:"Noto Sans JP",sans-serif;
 
+    background:#f6ead5;
+
+    background-image:
+    radial-gradient(#ffffff66 2px,transparent 2px),
+    linear-gradient(#f6ead5,#f3e3c4);
+
+    background-size:40px 40px;
+
 }
 
 
@@ -146,5 +154,257 @@ body{
 .hero-image img{
 
     width:380px;
+
+}
+
+.background-decoration{
+
+    position:fixed;
+
+    inset:0;
+
+    pointer-events:none;
+
+    z-index:-1;
+
+}
+
+.leaf{
+
+    position:absolute;
+
+    width:130px;
+
+    opacity:.15;
+
+}
+
+.leaf1{
+
+    left:60px;
+
+    top:80px;
+
+}
+
+.leaf2{
+
+    right:220px;
+
+    top:500px;
+
+}
+
+.leaf3{
+
+    left:150px;
+
+    bottom:100px;
+
+}
+
+.hero{
+
+    gap:120px;
+
+}
+
+.hero-image{
+
+    position:relative;
+
+}
+
+.circle{
+
+    position:absolute;
+
+    width:420px;
+
+    height:420px;
+
+    border-radius:50%;
+
+    background:#f3c17b;
+
+    top:50%;
+
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+}
+
+.hero-image img{
+
+    position:relative;
+
+    width:380px;
+
+    z-index:2;
+
+}
+
+.paper{
+
+    position:relative;
+
+    width:1100px;
+
+    margin:auto;
+
+    padding:70px;
+
+    background:#fffdf8;
+
+    border-radius:15px;
+
+    box-shadow:
+
+    0 15px 40px rgba(0,0,0,.15);
+
+}
+
+.clip{
+
+    position:absolute;
+
+    width:45px;
+
+    height:90px;
+
+    border:5px solid silver;
+
+    border-radius:25px;
+
+    left:50px;
+
+    top:-30px;
+
+}
+
+.tape{
+
+    position:absolute;
+
+    width:120px;
+
+    height:35px;
+
+    background:#ffe6a7aa;
+
+    transform:rotate(-8deg);
+
+}
+
+.tape1{
+
+    left:170px;
+
+    top:-12px;
+
+}
+
+.tape2{
+
+    right:120px;
+
+    top:-12px;
+
+    transform:rotate(12deg);
+
+}
+
+#profile{
+
+    padding:150px 0;
+
+}
+
+.paper{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.profile-left{
+
+    width:55%;
+
+}
+
+.profile-right{
+
+    width:35%;
+
+}
+
+.profile-right img{
+
+    width:100%;
+
+}
+
+.sns{
+
+    margin-top:50px;
+
+}
+
+.sns a{
+
+    display:inline-block;
+
+    margin-right:15px;
+
+    padding:12px 24px;
+
+    border-radius:50px;
+
+    background:#d26d20;
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.sns a:hover{
+
+    transform:translateY(-5px);
+
+    background:#ea8f43;
+
+}
+
+#sidebar a{
+
+    position:relative;
+
+    display:inline-block;
+
+    padding:6px 0;
+
+}
+
+#sidebar a.active{
+
+    color:#ffe79b;
+
+}
+
+#sidebar a.active::before{
+
+    content:"🍁";
+
+    position:absolute;
+
+    left:-30px;
 
 }
