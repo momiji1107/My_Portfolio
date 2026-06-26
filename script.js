@@ -54,3 +54,27 @@ window.addEventListener("scroll",()=>{
 
 // 初回表示
 window.dispatchEvent(new Event("scroll"));
+
+/*==========================
+        Works Tab
+==========================*/
+
+const tabs=document.querySelectorAll(".tab");
+const pages=document.querySelectorAll(".works-page");
+
+tabs.forEach(tab=>{
+
+    tab.addEventListener("click",()=>{
+
+        tabs.forEach(btn=>btn.classList.remove("active"));
+        pages.forEach(page=>page.classList.remove("active-page"));
+
+        tab.classList.add("active");
+
+        document
+            .getElementById(tab.dataset.target)
+            .classList.add("active-page");
+
+    });
+
+});
