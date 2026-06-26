@@ -38,21 +38,25 @@ body{
 
     position:fixed;
 
-    right:0;
+    right:35px;
 
-    top:0;
+    top:50%;
 
-    width:180px;
+    transform:translateY(-50%);
 
-    height:100vh;
+    width:120px;
 
-    background:linear-gradient(#df7c24,#c76011);
+    background:rgba(255,255,255,.92);
 
-    display:flex;
+    border-radius:20px;
 
-    align-items:center;
+    box-shadow:
 
-    z-index:100;
+    0 12px 30px rgba(0,0,0,.15);
+
+    padding:25px 0;
+
+    z-index:999;
 
 }
 
@@ -65,21 +69,24 @@ body{
 
 #sidebar li{
 
-    margin:25px 0;
-
+    margin:18px 0;
     text-align:center;
 
 }
 
 #sidebar a{
 
-    color:white;
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
 
     text-decoration:none;
 
-    font-weight:bold;
+    color:#7b4d20;
 
-    letter-spacing:2px;
+    font-weight:bold;
 
     transition:.3s;
 
@@ -88,6 +95,17 @@ body{
 #sidebar a:hover{
 
     color:#ffe08a;
+    transform:scale(1.08);
+
+}
+
+#sidebar span{
+
+    font-size:12px;
+
+    color:#d26c1b;
+
+    margin-bottom:4px;
 
 }
 
@@ -1716,5 +1734,173 @@ section{
     transform:
 
     rotate(-1deg);
+
+}
+
+/*==========================
+    Hero Decoration
+==========================*/
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:300px;
+
+    height:300px;
+
+    border-radius:50%;
+
+    background:
+
+    rgba(255,190,90,.18);
+
+    left:-80px;
+
+    top:-60px;
+
+}
+
+.hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:220px;
+
+    height:220px;
+
+    border-radius:50%;
+
+    background:
+
+    rgba(230,140,60,.12);
+
+    right:120px;
+
+    bottom:-40px;
+
+}
+
+.hero{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.hero-text h1{
+
+    animation:
+
+    titleAnimation
+
+    1.8s ease;
+
+}
+
+@keyframes titleAnimation{
+
+0%{
+
+opacity:0;
+
+transform:
+
+translateY(60px);
+
+}
+
+100%{
+
+opacity:1;
+
+transform:
+
+translateY(0);
+
+}
+
+}
+
+.section-title{
+
+    overflow:hidden;
+
+}
+
+.section-title h2{
+
+    animation:
+
+    slideTitle
+
+    1s;
+
+}
+
+@keyframes slideTitle{
+
+    0%{
+
+        transform:
+
+        translateX(-100px);
+
+        opacity:0;
+
+    }
+
+    100%{
+
+        transform:none;
+
+        opacity:1;
+
+    }
+
+}
+
+/*==========================
+Responsive
+==========================*/
+
+@media(max-width:1200px){
+
+.hero{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.paper{
+
+flex-direction:column;
+
+}
+
+.work-card{
+
+flex-direction:column;
+
+}
+
+.contact-paper{
+
+flex-direction:column;
+
+}
+
+.skill-grid{
+
+grid-template-columns:1fr;
+
+}
 
 }
