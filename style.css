@@ -999,3 +999,181 @@ body{
     opacity:.15;
 
 }
+
+/*==========================
+            News
+==========================*/
+
+#news{
+
+    padding:150px 0;
+
+}
+
+.news-container{
+
+    width:1100px;
+
+    margin:auto;
+
+}
+
+.news-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:30px;
+
+}
+
+.news-card{
+
+    display:flex;
+
+    align-items:center;
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.1);
+
+    transition:.35s;
+
+}
+
+.news-card:hover{
+
+    transform:translateX(10px);
+
+}
+
+.news-date{
+
+    min-width:180px;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    color:#d26b1d;
+
+}
+
+.news-date{
+
+    min-width:180px;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    color:#d26b1d;
+
+}
+
+.news-content p{
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+.news-more{
+
+    margin-top:50px;
+
+    text-align:center;
+
+}
+
+.news-more a{
+
+    display:inline-block;
+
+    padding:16px 38px;
+
+    background:#d97724;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:50px;
+
+    transition:.3s;
+
+}
+
+.news-more a:hover{
+
+    background:#ea9444;
+
+    transform:translateY(-5px);
+
+}
+
+.news-card::before{
+
+    content:"🍁";
+
+    font-size:30px;
+
+    margin-right:20px;
+
+}
+
+#news{
+
+    position:relative;
+
+}
+
+#news::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:180px;
+
+    height:180px;
+
+    left:0;
+
+    top:80px;
+
+    background:url("img/maple.png");
+
+    background-size:contain;
+
+    opacity:.08;
+
+}
+
+#news::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:180px;
+
+    height:180px;
+
+    right:0;
+
+    bottom:100px;
+
+    background:url("img/maple2.png");
+
+    background-size:contain;
+
+    opacity:.08;
+
+}
