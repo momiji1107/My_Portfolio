@@ -408,3 +408,141 @@ body{
     left:-30px;
 
 }
+
+/*==========================
+        ノート背景
+==========================*/
+
+.paper{
+
+    background-image:
+
+    repeating-linear-gradient(
+
+        transparent,
+
+        transparent 34px,
+
+        rgba(255,170,80,.15) 35px
+
+    );
+
+}
+
+/*==========================
+      セクションタイトル
+==========================*/
+
+.section-title{
+
+    margin-bottom:40px;
+
+}
+
+.section-title h2{
+
+    font-size:52px;
+
+    color:#c86217;
+
+}
+
+.section-title span{
+
+    display:block;
+
+    margin-top:10px;
+
+    color:#888;
+
+    font-size:20px;
+
+    letter-spacing:5px;
+
+}
+
+/*==========================
+        Hero
+==========================*/
+
+.sub-title{
+
+    color:#cb7b33;
+
+    letter-spacing:6px;
+
+    font-weight:bold;
+
+    margin-bottom:20px;
+
+}
+
+.scroll-btn{
+
+    display:inline-block;
+
+    margin-top:60px;
+
+    text-decoration:none;
+
+    color:white;
+
+    background:#d87422;
+
+    padding:15px 35px;
+
+    border-radius:50px;
+
+    transition:.3s;
+
+}
+
+.scroll-btn:hover{
+
+    background:#ec9449;
+
+    transform:translateY(-5px);
+
+}
+
+/*==========================
+      左右の余白調整
+==========================*/
+
+.profile-left{
+
+    padding-right:50px;
+
+}
+
+.profile-left p{
+
+    line-height:2.1;
+
+    margin-bottom:25px;
+
+    font-size:18px;
+
+}
+
+/*==========================
+        フェードイン
+==========================*/
+
+.fade{
+
+    opacity:0;
+
+    transform:translateY(50px);
+
+    transition:1s;
+
+}
+
+.fade.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}

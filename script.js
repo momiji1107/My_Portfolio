@@ -29,3 +29,28 @@ window.addEventListener("scroll",()=>{
     });
 
 });
+
+/*==========================
+    Fade Animation
+==========================*/
+
+const fades=document.querySelectorAll(".fade");
+
+window.addEventListener("scroll",()=>{
+
+    fades.forEach(item=>{
+
+        const pos=item.getBoundingClientRect().top;
+
+        if(pos<window.innerHeight-120){
+
+            item.classList.add("show");
+
+        }
+
+    });
+
+});
+
+// 初回表示
+window.dispatchEvent(new Event("scroll"));
