@@ -122,3 +122,30 @@ document.querySelectorAll(".slider").forEach(slider=>{
     });
 
 });
+
+/*==========================
+    Contact Form
+==========================*/
+
+const form=document.getElementById("contactForm");
+
+form.addEventListener("submit",function(e){
+
+    e.preventDefault();
+
+    const name=document.getElementById("name").value;
+    const mail=document.getElementById("mail").value;
+    const message=document.getElementById("message").value;
+
+    if(name===""||mail===""||message===""){
+
+        alert("すべて入力してください。");
+        return;
+
+    }
+
+    alert("送信しました。（ダミー）");
+
+    form.reset();
+
+});
