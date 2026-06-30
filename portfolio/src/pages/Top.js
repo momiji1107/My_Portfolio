@@ -1,6 +1,6 @@
-export function initHome(container) {
+export function initTop(container) {
   const section = document.createElement('section');
-  section.id = 'home';
+  section.id = 'top';
   section.className = 'min-h-screen flex items-center justify-center pt-16 bg-gradient-to-b from-neutral-100 to-white dark:from-neutral-900 dark:to-neutral-950';
   
   section.innerHTML = `
