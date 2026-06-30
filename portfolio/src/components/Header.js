@@ -11,30 +11,33 @@ export function initHeader() {
       <div class="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <!-- ロゴ / サイト名 -->
         <div class="flex items-center">
-          <a href="#home" class="flex items-center gap-2 text-xl font-black tracking-wider text-neutral-950 dark:text-white transition-opacity hover:opacity-80">
-            <span>深隧</span>
+          <a href="#top" class="flex items-center gap-2 text-xl font-black tracking-wider text-neutral-950 dark:text-white transition-opacity hover:opacity-80">
+            <span>もみじ Portfolio</span>
           </a>
         </div>
 
         <!-- ナビゲーションリンク -->
         <nav class="hidden md:flex items-center gap-8">
-          <a href="#home" class="nav-link text-sm font-medium text-neutral-600 hover:text-neutral-950 dark:text-neutral-400 dark:hover:text-white transition-colors relative py-2" data-page="home">
-            ホーム
+          <a href="#top" class="nav-link text-sm font-medium text-neutral-600 hover:text-neutral-950 dark:text-neutral-400 dark:hover:text-white transition-colors relative py-2" data-page="top">
+            トップ
+          </a>
+          <a href="#profile" class="nav-link text-sm font-medium text-neutral-600 hover:text-neutral-950 dark:text-neutral-400 dark:hover:text-white transition-colors relative py-2" data-page="profile">
+            プロフィール
           </a>
           <a href="#news" class="nav-link text-sm font-medium text-neutral-600 hover:text-neutral-950 dark:text-neutral-400 dark:hover:text-white transition-colors relative py-2" data-page="news">
             おしらせ
           </a>
-          <a href="#play" class="nav-link text-sm font-medium text-neutral-600 hover:text-neutral-950 dark:text-neutral-400 dark:hover:text-white transition-colors relative py-2" data-page="play">
-            あそびかた
+          <a href="#skillset" class="nav-link text-sm font-medium text-neutral-600 hover:text-neutral-950 dark:text-neutral-400 dark:hover:text-white transition-colors relative py-2" data-page="skillset">
+            スキルセット
           </a>
-          <a href="#gallery" class="nav-link text-sm font-medium text-neutral-600 hover:text-neutral-950 dark:text-neutral-400 dark:hover:text-white transition-colors relative py-2" data-page="gallery">
-            ギャラリー
+          <a href="#works" class="nav-link text-sm font-medium text-neutral-600 hover:text-neutral-950 dark:text-neutral-400 dark:hover:text-white transition-colors relative py-2" data-page="works">
+            作品集
           </a>
-          <a href="#support" class="nav-link text-sm font-medium text-neutral-600 hover:text-neutral-950 dark:text-neutral-400 dark:hover:text-white transition-colors relative py-2" data-page="support">
-            サポート
+          <a href="#mindset" class="nav-link text-sm font-medium text-neutral-600 hover:text-neutral-950 dark:text-neutral-400 dark:hover:text-white transition-colors relative py-2" data-page="mindset">
+            マインドセット
           </a>
-          <a href="#download" class="nav-link text-sm font-medium text-neutral-600 hover:text-neutral-950 dark:text-neutral-400 dark:hover:text-white transition-colors relative py-2" data-page="download">
-            ダウンロード
+          <a href="#contact" class="nav-link text-sm font-medium text-neutral-600 hover:text-neutral-950 dark:text-neutral-400 dark:hover:text-white transition-colors relative py-2" data-page="contact">
+            お問い合わせ
           </a>
         </nav>
 
@@ -51,12 +54,13 @@ export function initHeader() {
 
       <!-- モバイルナビゲーションメニュー -->
       <div id="mobile-menu" class="hidden md:hidden border-t border-neutral-200/80 bg-white/95 dark:border-neutral-800/80 dark:bg-neutral-900/95 px-4 py-3 space-y-1">
-        <a href="#home" class="block rounded-lg px-3 py-2.5 text-base font-medium text-neutral-600 hover:bg-neutral-100 hover:text-neutral-900 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-white" data-page="home">ホーム</a>
+        <a href="#top" class="block rounded-lg px-3 py-2.5 text-base font-medium text-neutral-600 hover:bg-neutral-100 hover:text-neutral-900 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-white" data-page="top">トップ</a>
+        <a href="#profile" class="block rounded-lg px-3 py-2.5 text-base font-medium text-neutral-600 hover:bg-neutral-100 hover:text-neutral-900 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-white" data-page="profile">プロフィール</a>
         <a href="#news" class="block rounded-lg px-3 py-2.5 text-base font-medium text-neutral-600 hover:bg-neutral-100 hover:text-neutral-900 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-white" data-page="news">おしらせ</a>
-        <a href="#play" class="block rounded-lg px-3 py-2.5 text-base font-medium text-neutral-600 hover:bg-neutral-100 hover:text-neutral-900 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-white" data-page="play">あそびかた</a>
-        <a href="#gallery" class="block rounded-lg px-3 py-2.5 text-base font-medium text-neutral-600 hover:bg-neutral-100 hover:text-neutral-900 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-white" data-page="gallery">ギャラリー</a>
-        <a href="#support" class="block rounded-lg px-3 py-2.5 text-base font-medium text-neutral-600 hover:bg-neutral-100 hover:text-neutral-900 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-white" data-page="support">サポート</a>
-        <a href="#download" class="block rounded-lg px-3 py-2.5 text-base font-medium text-neutral-600 hover:bg-neutral-100 hover:text-neutral-900 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-white" data-page="download">ダウンロード</a>
+        <a href="#skillset" class="block rounded-lg px-3 py-2.5 text-base font-medium text-neutral-600 hover:bg-neutral-100 hover:text-neutral-900 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-white" data-page="skillset">スキルセット</a>
+        <a href="#works" class="block rounded-lg px-3 py-2.5 text-base font-medium text-neutral-600 hover:bg-neutral-100 hover:text-neutral-900 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-white" data-page="works">作品集</a>
+        <a href="#mindset" class="block rounded-lg px-3 py-2.5 text-base font-medium text-neutral-600 hover:bg-neutral-100 hover:text-neutral-900 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-white" data-page="mindset">マインドセット</a>
+        <a href="#contact" class="block rounded-lg px-3 py-2.5 text-base font-medium text-neutral-600 hover:bg-neutral-100 hover:text-neutral-900 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-white" data-page="contact">お問い合わせ</a>
       </div>
     </header>
   `;
@@ -94,7 +98,7 @@ export function initHeader() {
   }
 
   // --- Scrollspy & アクティブ表示制御 ---
-  const sections = ['home', 'news', 'play', 'gallery', 'support', 'download'];
+  const sections = ['top', 'profile', 'news', 'skillset', 'works', 'mindset', 'contact'];
   const navLinks = app.querySelectorAll('[data-page]');
 
   // 指定されたページのアクティブ表示を更新する関数
