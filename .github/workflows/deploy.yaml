@@ -32,9 +32,11 @@ jobs:
           cache: npm
 
       - name: Install dependencies
+        working-directory: ./portfolio
         run: npm ci
 
       - name: Build
+        working-directory: ./portfolio
         run: npm run build
 
       - name: Setup Pages
