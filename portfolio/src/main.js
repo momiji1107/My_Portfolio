@@ -1,4 +1,5 @@
 import './style.css'
+import { initHeader } from './components/Header.js'
 
 // 各セクションの初期化関数をインポート
 import { initTop } from './pages/Top.js'
@@ -26,4 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initWorks(main);
   initMindSet(main);
   initContact(main);
+
+  // 共通ヘッダーの挿入
+  initHeader();
 });
