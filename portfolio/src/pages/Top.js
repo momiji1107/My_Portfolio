@@ -1,7 +1,7 @@
 export function initTop(container) {
   const section = document.createElement('section');
   section.id = 'top';
-  section.className = 'w-full min-h-screen flex items-center justify-center pt-130 bg-cover bg-center bg-no-repeat dark:from-neutral-900 dark:to-neutral-950';
+  section.className = 'w-full min-h-screen flex items-center justify-center pt-130 bg-cover bg-center bg-no-repeat';
   
   section.style.backgroundImage = `url('${import.meta.env.BASE_URL}img/background/CharaImage_BackGround.png')`;
   section.style.backgroundPosition = 'center';
