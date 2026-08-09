@@ -4,6 +4,7 @@ export function initTop(container) {
   section.className = 'w-full min-h-screen flex items-center justify-center pt-130 bg-cover bg-center bg-no-repeat';
   
   section.style.backgroundImage = `url('${import.meta.env.BASE_URL}img/background/CharaImage_BackGround.png')`;
+  section.style.backgroundSize = 'cover';
   section.style.backgroundPosition = 'center';
   section.style.backgroundRepeat = 'no-repeat';
 
