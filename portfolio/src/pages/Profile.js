@@ -28,6 +28,7 @@ export function initProfile(container) {
         class="w-full h-auto hidden lg:block"
       >
 
+      <!-- プロフィール内容 -->
       <div class="absolute inset-0 flex flex-col items-center justify-start pt-20 text-center px-8
       lg:pt-10">
         <img
