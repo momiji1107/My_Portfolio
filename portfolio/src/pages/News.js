@@ -42,7 +42,7 @@ export function initNews(container) {
         if (news.type === 'youtube') { iconPath = `${import.meta.env.BASE_URL}img/icon/youtube_icon.png`; }
         else if (news.type === 'x') { iconPath = `${import.meta.env.BASE_URL}img/icon/x_icon.png`; }
 
-        return `<a href="${news.url}" 
+        return `<a href="${news.url}" target="_blank" rel="noopener noreferrer"
         class=" block bg-orange-50 w-100 rounded-3xl px-8 py-4 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-200
         sm:w-130
         md:w-180">
