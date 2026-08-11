@@ -26,10 +26,10 @@ export function initNews(container) {
   section.innerHTML = `
   <div class="w-full min-h-screen flex flex-col items-center py-16">
     <div class="text-center">
-      <h2 class="text-6xl font-serif tracking-tight mb-1 text-neutral-950">
+      <h2 class="tracking-wide mb-1 text-center text-6xl font-serif italic font-bold text-[#8b4b20] drop-shadow-sm">
         News
       </h2>
-      <p class="text-lg font-bold text-neutral-950 font-serif">
+      <p class="font-serif z-20 mt-2 text-center text-lg font-bold text-[#704522]">
         - 最新情報 -
       </p>
     </div>

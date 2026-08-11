@@ -39,12 +39,12 @@ export function initProfile(container) {
           lg:right-10 lg:w-auto lg:h-auto"
         >
 
-        <h2 class="text-6xl font-serif tracking-tight mb-1 text-neutral-950 z-20
+        <h2 class="tracking-wide mb-1 text-center text-6xl font-serif italic font-bold text-[#8b4b20] drop-shadow-sm z-20
         sm:pr-55">
           Profile
         </h2>
 
-        <p class="text-lg font-bold text-neutral-950 font-serif z-20
+        <p class="font-serif z-20 mt-2 text-center text-lg font-bold text-[#704522]
         sm:pr-55">
           - 自己紹介 -
         </p>

@@ -27,7 +27,7 @@ export function initHeader() {
           <a href="#news" class="nav-link text-sm font-medium text-white hover:bg-black/50 hover:px-2 hover:py-2 hover:rounded-2xl transition-colors relative py-2" data-page="news">
             おしらせ
           </a>
-          <a href="#skillset" class="nav-link text-sm font-medium text-white hover:bg-black/50 hover:px-2 hover:py-2 hover:rounded-2xl transition-colors relative py-2" data-page="skillset">
+          <a href="#skilllevel" class="nav-link text-sm font-medium text-white hover:bg-black/50 hover:px-2 hover:py-2 hover:rounded-2xl transition-colors relative py-2" data-page="skilllevel">
             スキルセット
           </a>
           <a href="#works" class="nav-link text-sm font-medium text-white hover:bg-black/50 hover:px-2 hover:py-2 hover:rounded-2xl transition-colors relative py-2" data-page="works">
