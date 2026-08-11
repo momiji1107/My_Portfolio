@@ -9,7 +9,7 @@ export function initProfile(container) {
   section.style.backgroundRepeat = 'no-repeat';
 
   section.innerHTML = `
-    <div class="relative max-w-[1200px] max-h-[1000px]">
+    <div class="relative max-w-[1000px] max-h-[1000px]">
       <img
         src="${import.meta.env.BASE_URL}img/background/paper1_BackGround.jpeg"
         alt="縦向きの紙の背景"
@@ -36,7 +36,7 @@ export function initProfile(container) {
           alt="koma立ち絵"
           class="absolute w-full h-auto bottom-0 max-w-sm z-10
           sm:bottom-0 sm:right-0 sm:w-auto sm:h-auto
-          lg:bottom-0 lg:right-10 lg:w-auto lg:h-auto"
+          lg:right-10 lg:w-auto lg:h-auto"
         >
 
         <h2 class="text-6xl font-serif tracking-tight mb-1 text-neutral-950 z-20
@@ -53,9 +53,11 @@ export function initProfile(container) {
         items-center justify-start pt-60 px-15
         sm:items-start sm:justify-center sm:pt-5 sm:pr-35
         lg:pr-60">
-          <p class ="text-lg text-neutral-950 font-bold font-mono leading-relaxed max-w-3xl z-20"
-          style ="text-shadow: 2px 2px 4px rgb(200, 200, 200);
-          ">
+          <p class ="text-lg text-neutral-950 font-bold font-mono leading-relaxed pt-0 max-w-3xl z-20
+          sm:max-w-[350px] sm:pt-10
+          lg:max-w-[1000px] lg:pt-10"
+          style ="text-shadow: 0px 0px 10px rgb(255, 239, 210);"
+          >
             ゲームクリエイターを目指す大学生。<br/>
             幼い頃から"ものづくり"が大好きで、現在はその情熱をゲーム制作に注いでいる。<br/>
             新しい体験へのわくわくと心に残る想い出を届けたい。<br/>
