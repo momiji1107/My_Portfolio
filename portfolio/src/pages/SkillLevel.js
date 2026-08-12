@@ -1,4 +1,4 @@
-const skillLevels = [
+export const skillLevels = [
     {
         level: 1,
         name: 'Beginner',

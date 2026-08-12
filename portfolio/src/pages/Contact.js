@@ -10,8 +10,8 @@ export function initContact(container) {
   
   section.innerHTML = `
     <div class="max-w-3xl text-center px-4">
-      <h2 class="text-6xl font-serif tracking-tight mb-1 text-neutral-950">Contact</h2>
-      <p class="text-lg font-bold text-neutral-950 font-serif">- お問い合わせ -</p>
+      <h2 class="text-center text-5xl sm:text-6xl font-serif italic font-bold text-[#8b4b20] drop-shadow-sm">Contact</h2>
+      <p class="font-serif mt-2 text-center text-lg font-bold text-[#704522]">- お問い合わせ -</p>
     </div>
   `;
   

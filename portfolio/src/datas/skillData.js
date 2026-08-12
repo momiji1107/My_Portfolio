@@ -7,13 +7,13 @@ export const skillCategories = [
             {
                 name: 'C',
                 icon: `${import.meta.env.BASE_URL}img/icon/c.png`,
-                level: 4,
+                level: 2,
                 description: '授業やゲーム制作を通して、C言語によるプログラミングを学んでいます。'
             },
             {
                 name: 'C#',
                 icon: `${import.meta.env.BASE_URL}img/icon/csharp.png`,
-                level: 5,
+                level: 4,
                 description: 'Unityでのゲーム制作を中心に、C#を使用した開発を行っています。'
             },
             {
@@ -24,14 +24,14 @@ export const skillCategories = [
             },
             {
                 name: 'HTML',
-                icon: `${import.meta.env.BASE_URL}img/icon/c.png`,
-                level: 4,
+                icon: `${import.meta.env.BASE_URL}img/icon/html.png`,
+                level: 2,
                 description: 'ポートフォリオサイトなどのWebページ制作に使用しています。'
             },
             {
                 name: 'CSS',
-                icon: `${import.meta.env.BASE_URL}img/icon/c.png`,
-                level: 4,
+                icon: `${import.meta.env.BASE_URL}img/icon/css.png`,
+                level: 2,
                 description: 'Tailwind CSSなどを使用してWebページのデザインを制作しています。'
             }
         ]
@@ -45,20 +45,20 @@ export const skillCategories = [
             {
                 name: 'Unity',
                 icon: `${import.meta.env.BASE_URL}img/icon/unity.png`,
-                level: 5,
+                level: 4,
                 description: 'ゲーム制作サークルでのチーム開発を中心に使用しています。'
             },
             {
                 name: 'Blender',
                 icon: `${import.meta.env.BASE_URL}img/icon/blender.png`,
-                level: 3,
+                level: 2,
                 description: 'ゲーム制作に必要な3Dモデルや素材の制作に使用しています。'
             },
             {
-                name: 'Scratch',
-                icon: `${import.meta.env.BASE_URL}img/icon/unity.png`,
-                level: 3,
-                description: 'ゲーム制作を通してプログラミングの基礎を学びました。'
+                name: 'ibis Paint',
+                icon: `${import.meta.env.BASE_URL}img/icon/ibispaint.png`,
+                level: 4,
+                description: 'イラスト制作や画像処理に使用しています。'
             }
         ]
     },
@@ -83,8 +83,8 @@ export const skillCategories = [
             {
                 name: 'VS Code',
                 icon: `${import.meta.env.BASE_URL}img/icon/vscode.png`,
-                level: 4,
-                description: 'Webサイト制作やJavaScriptなどの開発に使用しています。'
+                level: 3,
+                description: 'JavaやJavaScriptなどを用いた開発に使用しています。'
             }
         ]
     },
@@ -98,13 +98,19 @@ export const skillCategories = [
                 name: 'GitHub',
                 icon: `${import.meta.env.BASE_URL}img/icon/github.png`,
                 level: 4,
-                description: 'チーム開発やポートフォリオのソースコード管理に使用しています。'
+                description: 'チーム開発でのバージョン管理やポートフォリオのソースコード管理に使用しています。'
             },
             {
                 name: 'Notion',
                 icon: `${import.meta.env.BASE_URL}img/icon/notion.png`,
-                level: 3,
+                level: 4,
                 description: '制作物の情報整理やタスク管理などに使用しています。'
+            },
+            {
+                name: 'HackMD',
+                icon: `${import.meta.env.BASE_URL}img/icon/hackmd.png`,
+                level: 3,
+                description: 'チーム開発での情報整理などに使用しています。'
             }
         ]
     }

@@ -1,4 +1,5 @@
 import { skillCategories } from '../datas/skillData.js';
+import { skillLevels } from './SkillLevel.js';
 
 export function initSkillSet(container) {
     const section = document.createElement('section');
@@ -72,7 +73,7 @@ export function initSkillSet(container) {
 
             maple.src = mapleImage;
             maple.alt = '';
-            maple.className = 'w-5 h-5 sm:w-6 sm:h-6 object-contain transition duration-200';
+            maple.className = 'w-7 h-7 sm:w-6 sm:h-6 object-contain transition duration-200';
 
             if (i > level) {
                 maple.classList.add('opacity-20', 'grayscale');
@@ -112,15 +113,25 @@ export function initSkillSet(container) {
 
         const name = document.createElement('h3');
         name.textContent = skill.name;
-        name.className = 'text-center text-xl sm:text-2xl font-bold text-[#5a4030]';
+        name.className = 'text-center text-3xl sm:text-2xl font-bold text-[#5a4030]';
 
         // --------------------------------------------------
         // スキルレベル
         // --------------------------------------------------
 
+        function getSkillLevelName(level) {
+            const skillLevel = skillLevels.find((item) => item.level === level);
+
+            if (!skillLevel) {
+                return '';
+            }
+
+            return skillLevel.name;
+        }
+
         const levelLabel = document.createElement('p');
-        levelLabel.textContent = 'Skill Level';
-        levelLabel.className = 'mt-3 mb-2 text-center text-xs font-semibold text-[#9a6a43]';
+        levelLabel.textContent = getSkillLevelName(skill.level);
+        levelLabel.className = 'mt-3 mb-2 text-center text-xm font-semibold text-[#9a6a43]';
 
         const level = createSkillLevel(skill.level);
 
@@ -191,7 +202,7 @@ export function initSkillSet(container) {
         // ----------------------------------------------
 
         const grid = document.createElement('div');
-        grid.className = 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-5';
+        grid.className = 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5';
 
         category.skills.forEach((skill) => {
             grid.appendChild(createSkillCard(skill));
