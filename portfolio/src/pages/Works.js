@@ -13,8 +13,12 @@ export function initWorks(container) {
   section.innerHTML = `
     <div id="works-paper" class="relative w-full max-w-7xl overflow-hidden rounded-sm px-6 pt-10 sm:px-12 md:px-20 lg:px-28">
       <div class="w-full max-w-3xl mx-auto text-center px-4 mb-12">
-        <h2 class="text-center text-5xl sm:text-6xl font-serif italic font-bold text-[#8b4b20] drop-shadow-sm">Works</h2>
-        <p class="font-serif mt-2 text-center text-lg font-bold text-[#704522]">- 作品一覧 -</p>
+        <h2 class="text-center text-5xl sm:text-6xl font-serif italic font-bold text-[#8b4b20] drop-shadow-sm">
+          Works
+        </h2>
+        <p class="font-serif mt-2 text-center text-lg font-bold text-[#704522]">
+          - 作品一覧 -
+        </p>
       </div>
     </div>
   `;
