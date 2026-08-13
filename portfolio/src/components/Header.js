@@ -12,6 +12,16 @@ export function initHeader() {
         <!-- ロゴ / サイト名 -->
         <div class="flex items-center">
           <a href="#top" class="flex items-center gap-2 text-xl font-black tracking-wider text-white transition-opacity hover:opacity-80">
+
+            <!-- もみじアイコン -->
+            <span class="flex h-10 w-10 items-center justify-center rounded-full bg-white p-1.5 shadow-sm">
+              <img
+                src="${import.meta.env.BASE_URL}img/icon/momiji.png"
+                alt="もみじ"
+                class="h-full w-full rounded-full object-contain"
+              >
+            </span>
+
             <span>もみじ Portfolio</span>
           </a>
         </div>

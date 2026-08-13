@@ -11,46 +11,45 @@ emailjs.init({
 export function initContact(container) {
   const section = document.createElement('section');
   section.id = 'contact';
-  section.className = 'w-full min-h-[1000px] flex items-center justify-center bg-cover bg-center bg-no-repeat';
-  
+  section.className = 'w-full min-h-[1000px] flex flex-col items-center justify-center bg-cover bg-center bg-no-repeat py-16 px-4';
+
   section.style.backgroundImage = `url('${import.meta.env.BASE_URL}img/background/momiji_BackGround.png')`;
   section.style.backgroundSize = 'cover';
   section.style.backgroundPosition = 'center';
   section.style.backgroundRepeat = 'no-repeat';
-  
+
   section.innerHTML = `
-    <div id="contact-paper" 
+    <!-- Paper -->
+    <div id="contact-paper"
     class="relative w-full max-w-5xl overflow-hidden rounded-sm px-6 py-12 sm:px-12 md:px-20 lg:px-28">
-    
-    <img
-      src="${import.meta.env.BASE_URL}img/background/paper1_BackGround.jpeg"
-      alt=""
-      class="pointer-events-none absolute inset-0 z-0 h-full w-full object-fill"
-    >
-    
-    <div class="relative z-10">
 
-      <!-- タイトル -->
-      <div class="relative z-10 mb-5 mt-5 text-center">
-        <h2 class="text-center text-5xl sm:text-6xl font-serif italic font-bold text-[#8b4b20] drop-shadow-sm">
-          Contact
-        </h2>
+      <img
+        src="${import.meta.env.BASE_URL}img/background/paper1_BackGround.jpeg"
+        alt=""
+        class="pointer-events-none absolute inset-0 z-0 h-full w-full object-fill"
+      >
 
-        <p class="font-serif mt-2 text-center text-lg font-bold text-[#704522]">
-          - お問い合わせ -
-        </p>
-      </div>
+      <!-- Paper上のコンテンツ -->
+      <div class="relative z-10">
 
-      <!-- 区切り線 -->
-      <div class="mb-8 border-t-2 border-[#ead9bd]"></div>
+        <!-- タイトル -->
+        <div class="relative z-10 mb-5 mt-5 text-center">
+          <h2 class="text-center text-5xl sm:text-6xl font-serif italic font-bold text-[#8b4b20] drop-shadow-sm">
+            Contact
+          </h2>
+
+          <p class="font-serif mt-2 text-center text-lg font-bold text-[#704522]">
+            - お問い合わせ -
+          </p>
+        </div>
 
         <!-- 送信先 -->
-        <div class="mb-8 ml-2 flex gap-2 text-lg flex-row sm:items-center sm:gap-4">
+        <div class="mb-8 ml-2 flex flex-row gap-2 text-lg sm:items-center sm:gap-4">
           <span class="font-bold text-[#59351f]">
-            Dear 
+            Dear
           </span>
 
-          <span class="font-bold text-[#d95f27] break-all">
+          <span class="break-all font-bold text-[#d95f27]">
             freemomiji183@gmail.com
           </span>
         </div>
@@ -93,7 +92,7 @@ export function initContact(container) {
           <!-- 本文 -->
           <div class="mb-3">
             <label for="message" class="mb-3 ml-2 block text-lg font-bold text-[#59351f] sm:text-xl">
-               本文
+              本文
             </label>
 
             <textarea
@@ -103,7 +102,7 @@ export function initContact(container) {
               rows="9"
               placeholder="ご用件をご記入ください"
               class="w-full resize-y rounded-xl border-2 border-[#ead9bd] bg-[#fffdf7] px-5 py-4 text-base leading-relaxed text-[#59351f] outline-none transition placeholder:text-[#c7b79f] focus:border-[#d95f27] focus:ring-2 focus:ring-[#d95f27]/20 sm:text-lg"
-              ></textarea>
+            ></textarea>
           </div>
 
           <!-- 名前 -->
@@ -138,70 +137,122 @@ export function initContact(container) {
 
         </form>
 
-        <!-- 確認モーダル -->
-        <div id="contact-confirm-modal"
-        class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/40 px-4 backdrop-blur-sm">
-          
-          <div class="w-full max-w-md rounded-2xl bg-[#fffaf0] p-8 text-center shadow-2xl">
+      </div>
 
-            <h3 class="mb-4 text-2xl font-bold text-[#59351f]">
-              お問い合わせを送信しますか？
-            </h3>
+      <!-- 確認モーダル -->
+      <div id="contact-confirm-modal"
+      class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/40 px-4 backdrop-blur-sm">
 
-            <p class="mb-8 leading-relaxed text-[#79583e]">
-              入力した内容を送信します。<br/>
-              よろしければ「送信する」を押してください。
-            </p>
+        <div class="w-full max-w-md rounded-2xl bg-[#fffaf0] p-8 text-center shadow-2xl">
 
-            <div class="flex justify-center gap-4">
-              <button
-                type="button"
-                id="contact-cancel-button"
-                class="rounded-xl border-2 border-[#d8c4a5] px-6 py-3 font-bold text-[#59351f] transition hover:bg-[#f2e5d0]"
-              >
-                キャンセル
-              </button>
+          <h3 class="mb-4 text-2xl font-bold text-[#59351f]">
+            お問い合わせを送信しますか？
+          </h3>
 
-              <button
-                type="button"
-                id="contact-confirm-button"
-                class="rounded-xl bg-[#e8752c] px-6 py-3 font-bold text-white transition hover:bg-[#d96520]"
-              >
-                送信する
-              </button>
-            </div>
+          <p class="mb-8 leading-relaxed text-[#79583e]">
+            入力した内容を送信します。<br/>
+            よろしければ「送信する」を押してください。
+          </p>
 
-          </div>
-        </div>
-
-        <!-- 送信結果モーダル -->
-        <div id="contact-result-modal"
-        class="fixed inset-0 z-[110] hidden items-center justify-center bg-black/40 px-4 backdrop-blur-sm">
-          
-          <div class="w-full max-w-md rounded-2xl bg-[#fffaf0] p-8 text-center shadow-2xl">
-            <h3
-              id="contact-result-title"
-              class="mb-4 text-2xl font-bold text-[#59351f]">
-            </h3>
-              <p
-              id="contact-result-message"
-              class="mb-8 leading-relaxed text-[#79583e]">
-              </p>
-
-              <button
+          <div class="flex justify-center gap-4">
+            <button
               type="button"
-              id="contact-result-close"
-              class="rounded-xl bg-[#e8752c] px-8 py-3 font-bold text-white transition hover:bg-[#d96520]"
-              >
-                閉じる
-              </button>
+              id="contact-cancel-button"
+              class="rounded-xl border-2 border-[#d8c4a5] px-6 py-3 font-bold text-[#59351f] transition hover:bg-[#f2e5d0]"
+            >
+              キャンセル
+            </button>
 
+            <button
+              type="button"
+              id="contact-confirm-button"
+              class="rounded-xl bg-[#e8752c] px-6 py-3 font-bold text-white transition hover:bg-[#d96520]"
+            >
+              送信する
+            </button>
           </div>
+
         </div>
       </div>
+
+      <!-- 送信結果モーダル -->
+      <div id="contact-result-modal"
+      class="fixed inset-0 z-[110] hidden items-center justify-center bg-black/40 px-4 backdrop-blur-sm">
+
+        <div class="w-full max-w-md rounded-2xl bg-[#fffaf0] p-8 text-center shadow-2xl">
+
+          <h3
+            id="contact-result-title"
+            class="mb-4 text-2xl font-bold text-[#59351f]">
+          </h3>
+
+          <p
+            id="contact-result-message"
+            class="mb-8 leading-relaxed text-[#79583e]">
+          </p>
+
+          <button
+            type="button"
+            id="contact-result-close"
+            class="rounded-xl bg-[#e8752c] px-8 py-3 font-bold text-white transition hover:bg-[#d96520]"
+          >
+            閉じる
+          </button>
+
+        </div>
+      </div>
+
     </div>
-    `;
-  
+
+    <!-- 外部リンクボタン -->
+    <div
+      id="contact-links"
+      class="mt-10 grid w-full max-w-4xl grid-cols-2 justify-items-center gap-4 px-4 sm:grid-cols-4 sm:gap-6"
+    >
+
+      <!-- GitHub -->
+      <a
+        href="https://github.com/momiji1107"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex w-[140px] items-center justify-center rounded-xl bg-[#333333] px-4 py-3 text-base font-bold text-white shadow-lg transition duration-200 hover:-translate-y-1 hover:shadow-xl sm:w-full sm:max-w-[190px] sm:px-6 sm:py-4 sm:text-lg"
+      >
+        GitHub
+      </a>
+
+      <!-- YouTube -->
+      <a
+        href="https://youtube.com/@momijigame?si=EWVWIsGWZRnOBK1l"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex w-[140px] items-center justify-center rounded-xl bg-[#ff0000] px-4 py-3 text-base font-bold text-white shadow-lg transition duration-200 hover:-translate-y-1 hover:shadow-xl sm:w-full sm:max-w-[190px] sm:px-6 sm:py-4 sm:text-lg"
+      >
+        YouTube
+      </a>
+
+      <!-- X -->
+      <a
+        href="https://x.com/momijiGameUnity"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex w-[140px] items-center justify-center rounded-xl bg-black px-4 py-3 text-base font-bold text-white shadow-lg transition duration-200 hover:-translate-y-1 hover:shadow-xl sm:w-full sm:max-w-[190px] sm:px-6 sm:py-4 sm:text-lg"
+      >
+        X(旧Twitter)
+      </a>
+
+      <!-- itch.io -->
+      <a
+        href="https://momijigame.itch.io/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex w-[140px] items-center justify-center rounded-xl bg-[#fa5c5c] px-4 py-3 text-base font-bold text-white shadow-lg transition duration-200 hover:-translate-y-1 hover:shadow-xl sm:w-full sm:max-w-[190px] sm:px-6 sm:py-4 sm:text-lg"
+      >
+        itch.io
+      </a>
+
+    </div>
+  `;
+
   container.appendChild(section);
 
   const form = section.querySelector('#contact-form');
@@ -222,8 +273,8 @@ export function initContact(container) {
     event.preventDefault();
 
     if (!form.checkValidity()) {
-        form.reportValidity();
-        return;
+      form.reportValidity();
+      return;
     }
 
     confirmModal.classList.remove('hidden');
@@ -287,12 +338,12 @@ export function initContact(container) {
       confirmButton.textContent = '送信する';
 
     }
-});
+  });
 
 
-// 結果ウィンドウを閉じる
-resultCloseButton.addEventListener('click', () => {
+  // 結果ウィンドウを閉じる
+  resultCloseButton.addEventListener('click', () => {
     resultModal.classList.add('hidden');
     resultModal.classList.remove('flex');
-});
+  });
 }
