@@ -409,7 +409,7 @@ function createWorkCard(work, workIndex) {
 
     githubButton.innerHTML = `
         <span>GitHub</span>
-        <span class="text-xl">↗</span>
+        <span class="text-xl">▶</span>
     `;
 
     infoArea.appendChild(githubButton);
