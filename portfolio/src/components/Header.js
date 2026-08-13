@@ -7,36 +7,46 @@ export function initHeader() {
   if (!app) return;
 
   const headerHtml = `
-    <header class="sticky top-0 z-50 w-full border-b border-neutral-200/80 bg-white/80 backdrop-blur-md dark:border-neutral-800/80 dark:bg-neutral-900/80">
+    <header class="sticky top-0 z-50 w-full border-b border-neutral-200/80 bg-amber-600/80 backdrop-blur-md dark:border-neutral-800/80 dark:bg-neutral-900/80">
       <div class="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <!-- ロゴ / サイト名 -->
         <div class="flex items-center">
-          <a href="#top" class="flex items-center gap-2 text-xl font-black tracking-wider text-neutral-950 dark:text-white transition-opacity hover:opacity-80">
+          <a href="#top" class="flex items-center gap-2 text-xl font-black tracking-wider text-white transition-opacity hover:opacity-80">
+
+            <!-- もみじアイコン -->
+            <span class="flex h-10 w-10 items-center justify-center rounded-full bg-white p-1.5 shadow-sm">
+              <img
+                src="${import.meta.env.BASE_URL}img/icon/momiji.png"
+                alt="もみじ"
+                class="h-full w-full rounded-full object-contain"
+              >
+            </span>
+
             <span>もみじ Portfolio</span>
           </a>
         </div>
 
         <!-- ナビゲーションリンク -->
         <nav class="hidden md:flex items-center gap-8">
-          <a href="#top" class="nav-link text-sm font-medium text-neutral-600 hover:text-neutral-950 dark:text-neutral-400 dark:hover:text-white transition-colors relative py-2" data-page="top">
+          <a href="#top" class="nav-link text-sm font-medium text-white hover:bg-black/50 hover:px-2 hover:py-2 hover:rounded-2xl transition-colors relative py-2" data-page="top">
             トップ
           </a>
-          <a href="#profile" class="nav-link text-sm font-medium text-neutral-600 hover:text-neutral-950 dark:text-neutral-400 dark:hover:text-white transition-colors relative py-2" data-page="profile">
+          <a href="#profile" class="nav-link text-sm font-medium text-white hover:bg-black/50 hover:px-2 hover:py-2 hover:rounded-2xl transition-colors relative py-2" data-page="profile">
             プロフィール
           </a>
-          <a href="#news" class="nav-link text-sm font-medium text-neutral-600 hover:text-neutral-950 dark:text-neutral-400 dark:hover:text-white transition-colors relative py-2" data-page="news">
+          <a href="#news" class="nav-link text-sm font-medium text-white hover:bg-black/50 hover:px-2 hover:py-2 hover:rounded-2xl transition-colors relative py-2" data-page="news">
             おしらせ
           </a>
-          <a href="#skillset" class="nav-link text-sm font-medium text-neutral-600 hover:text-neutral-950 dark:text-neutral-400 dark:hover:text-white transition-colors relative py-2" data-page="skillset">
+          <a href="#works" class="nav-link text-sm font-medium text-white hover:bg-black/50 hover:px-2 hover:py-2 hover:rounded-2xl transition-colors relative py-2" data-page="works">
+            作品一覧
+          </a>
+          <a href="#skillset" class="nav-link text-sm font-medium text-white hover:bg-black/50 hover:px-2 hover:py-2 hover:rounded-2xl transition-colors relative py-2" data-page="skillset">
             スキルセット
           </a>
-          <a href="#works" class="nav-link text-sm font-medium text-neutral-600 hover:text-neutral-950 dark:text-neutral-400 dark:hover:text-white transition-colors relative py-2" data-page="works">
-            作品集
-          </a>
-          <a href="#mindset" class="nav-link text-sm font-medium text-neutral-600 hover:text-neutral-950 dark:text-neutral-400 dark:hover:text-white transition-colors relative py-2" data-page="mindset">
+          <a href="#mindset" class="nav-link text-sm font-medium text-white hover:bg-black/50 hover:px-2 hover:py-2 hover:rounded-2xl transition-colors relative py-2" data-page="mindset">
             マインドセット
           </a>
-          <a href="#contact" class="nav-link text-sm font-medium text-neutral-600 hover:text-neutral-950 dark:text-neutral-400 dark:hover:text-white transition-colors relative py-2" data-page="contact">
+          <a href="#contact" class="nav-link text-sm font-medium text-white hover:bg-black/50 hover:px-2 hover:py-2 hover:rounded-2xl transition-colors relative py-2" data-page="contact">
             お問い合わせ
           </a>
         </nav>
@@ -44,7 +54,7 @@ export function initHeader() {
         <!-- アクションボタン -->
         <div class="flex items-center gap-4">
           <!-- モバイルメニュー開閉ボタン -->
-          <button id="mobile-menu-btn" class="rounded-lg p-2 text-neutral-600 hover:bg-neutral-100 dark:text-neutral-400 dark:hover:bg-neutral-800 md:hidden" aria-label="メニューを開閉" aria-expanded="false">
+          <button id="mobile-menu-btn" class="rounded-lg p-2 text-white hover:bg-black/50 hover:backdrop-blur-md hover:rounded-2xl md:hidden" aria-label="メニューを開閉" aria-expanded="false">
             <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path id="menu-icon-path" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
@@ -53,14 +63,14 @@ export function initHeader() {
       </div>
 
       <!-- モバイルナビゲーションメニュー -->
-      <div id="mobile-menu" class="hidden md:hidden border-t border-neutral-200/80 bg-white/95 dark:border-neutral-800/80 dark:bg-neutral-900/95 px-4 py-3 space-y-1">
-        <a href="#top" class="block rounded-lg px-3 py-2.5 text-base font-medium text-neutral-600 hover:bg-neutral-100 hover:text-neutral-900 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-white" data-page="top">トップ</a>
-        <a href="#profile" class="block rounded-lg px-3 py-2.5 text-base font-medium text-neutral-600 hover:bg-neutral-100 hover:text-neutral-900 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-white" data-page="profile">プロフィール</a>
-        <a href="#news" class="block rounded-lg px-3 py-2.5 text-base font-medium text-neutral-600 hover:bg-neutral-100 hover:text-neutral-900 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-white" data-page="news">おしらせ</a>
-        <a href="#skillset" class="block rounded-lg px-3 py-2.5 text-base font-medium text-neutral-600 hover:bg-neutral-100 hover:text-neutral-900 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-white" data-page="skillset">スキルセット</a>
-        <a href="#works" class="block rounded-lg px-3 py-2.5 text-base font-medium text-neutral-600 hover:bg-neutral-100 hover:text-neutral-900 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-white" data-page="works">作品集</a>
-        <a href="#mindset" class="block rounded-lg px-3 py-2.5 text-base font-medium text-neutral-600 hover:bg-neutral-100 hover:text-neutral-900 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-white" data-page="mindset">マインドセット</a>
-        <a href="#contact" class="block rounded-lg px-3 py-2.5 text-base font-medium text-neutral-600 hover:bg-neutral-100 hover:text-neutral-900 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-white" data-page="contact">お問い合わせ</a>
+      <div id="mobile-menu" class="hidden md:hidden border-t border-neutral-200/80 bg-orange/20 px-4 py-3 space-y-1">
+        <a href="#top" class="block rounded-lg px-3 py-2.5 text-base font-medium text-white hover:bg-neutral-100 hover:text-neutral-900 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-white" data-page="top">トップ</a>
+        <a href="#profile" class="block rounded-lg px-3 py-2.5 text-base font-medium text-white hover:bg-neutral-100 hover:text-neutral-900 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-white" data-page="profile">プロフィール</a>
+        <a href="#news" class="block rounded-lg px-3 py-2.5 text-base font-medium text-white hover:bg-neutral-100 hover:text-neutral-900 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-white" data-page="news">おしらせ</a>
+        <a href="#works" class="block rounded-lg px-3 py-2.5 text-base font-medium text-white hover:bg-neutral-100 hover:text-neutral-900 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-white" data-page="works">作品集</a>
+        <a href="#skillset" class="block rounded-lg px-3 py-2.5 text-base font-medium text-white hover:bg-neutral-100 hover:text-neutral-900 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-white" data-page="skillset">スキルセット</a>
+        <a href="#mindset" class="block rounded-lg px-3 py-2.5 text-base font-medium text-white hover:bg-neutral-100 hover:text-neutral-900 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-white" data-page="mindset">マインドセット</a>
+        <a href="#contact" class="block rounded-lg px-3 py-2.5 text-base font-medium text-white hover:bg-neutral-100 hover:text-neutral-900 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-white" data-page="contact">お問い合わせ</a>
       </div>
     </header>
   `;
@@ -121,7 +131,7 @@ export function initHeader() {
         link.classList.add('text-neutral-950', 'font-semibold', 'dark:text-white');
         
         if (isNavLink) {
-          link.insertAdjacentHTML('beforeend', '<span class="active-line absolute bottom-0 left-0 h-0.5 w-full bg-neutral-950 dark:bg-white rounded-full"></span>');
+          link.insertAdjacentHTML('beforeend', '<span class="active-line absolute bottom-0 left-0 h-0.5 w-full bg-white rounded-full"></span>');
         }
       }
     });

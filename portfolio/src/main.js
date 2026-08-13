@@ -5,8 +5,9 @@ import { initHeader } from './components/Header.js'
 import { initTop } from './pages/Top.js'
 import { initProfile } from './pages/Profile.js'
 import { initNews } from './pages/News.js'
-import { initSkillSet } from './pages/SkillSet.js'
 import { initWorks } from './pages/Works.js'
+import { initSkillLevel } from './pages/SkillLevel.js'
+import { initSkillSet } from './pages/SkillSet.js'
 import { initMindSet } from './pages/MindSet.js'
 import { initContact } from './pages/Contact.js'
 
@@ -23,8 +24,9 @@ document.addEventListener('DOMContentLoaded', () => {
   initTop(main);
   initProfile(main);
   initNews(main);
-  initSkillSet(main);
   initWorks(main);
+  initSkillLevel(main);
+  initSkillSet(main);
   initMindSet(main);
   initContact(main);
 

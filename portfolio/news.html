@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News - もみじ Portfolio</title>
+</head>
+
+<body class="bg-neutral-50 text-neutral-900 antialiased">
+  <div id="app" class="flex min-h-screen flex-col">
+  </div>
+
+  <script type="module">
+    import './src/style.css';
+    import { initNewsAll } from './src/pages/NewsAll.js';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const app = document.querySelector('#app');
+
+      if (!app) return;
+
+      initNewsAll(app);
+    });
+  </script>
+</body>
+
+</html>
