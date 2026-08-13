@@ -1,5 +1,13 @@
 export const newsList = [
     {
+        date: '2026.08.14',
+        type: 'update',
+        title: 'ポートフォリオサイトver1.0を公開しました。',
+        description: 'ポートフォリオサイトの基盤が完成したので公開しました。今後随時アップデートしていく予定です。',
+        url: ''
+    },
+
+    {
         date: '2026.04.19',
         type: 'youtube',
         title: '【Unity】鉄板の穴を選択する#6【たこ焼き屋さん】を投稿しました。',

@@ -21,7 +21,7 @@ export const worksData = [
         roles: 'プログラミング / 敵の行動処理実装 / ゲームシステム設計 / カメラ制御 / ステージデザイン',
         description: '行方不明者が続出するトンネルを探索する3Dホラーゲームです。トンネル内はランダムに生成された地形となっており、徘徊するゾンビと戦いながら脱出を目指します。限られた銃弾をやりくりする緊張感と音響・映像による恐怖演出が特徴です。',
         images: [
-            'img/works/slime2.jpg'
+            'img/works/noimage.jpg'
         ],
         github: 'https://github.com/PandD-Aizu/Minge2025Summer_Team3'
     },

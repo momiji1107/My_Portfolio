@@ -24,7 +24,7 @@ export function initNews(container) {
   const latestNews = sortedNews.slice(0, 3);
 
   section.innerHTML = `
-  <div class="w-full min-h-screen flex flex-col items-center py-16">
+  <div class="w-full min-h-screen flex flex-col items-center py-10">
     <div class="text-center">
       <h2 class="tracking-wide mb-1 text-center text-5xl sm:text-6xl font-serif italic font-bold text-[#8b4b20] drop-shadow-sm">
         News
@@ -41,6 +41,7 @@ export function initNews(container) {
         let iconPath = '';
         if (news.type === 'youtube') { iconPath = `${import.meta.env.BASE_URL}img/icon/youtube_icon.png`; }
         else if (news.type === 'x') { iconPath = `${import.meta.env.BASE_URL}img/icon/x_icon.png`; }
+        else if (news.type === 'update') { iconPath = `${import.meta.env.BASE_URL}img/icon/momiji.png`; }
 
         return `<a href="${news.url}" target="_blank" rel="noopener noreferrer"
         class=" block bg-orange-50 w-100 rounded-3xl px-8 py-4 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-200
@@ -89,8 +90,8 @@ export function initNews(container) {
 
 
     <!-- さらに見る -->
-    <div class="items-center justify-end mt-10">
-      <a href="#"
+    <div class="items-center justify-end mt-20">
+      <a href="${import.meta.env.BASE_URL}news.html"
       class="px-10 py-4 bg-orange-400 text-white text-lg font-bold rounded-2xl shadow-lg hover:bg-orange-300 hover:-translate-y-1 transition">
         さらに見る　▶
       </a>

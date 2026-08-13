@@ -238,11 +238,11 @@ function createWorkCard(work, workIndex) {
     // 作品番号
     // ------------------------------
     const number = document.createElement('div');
-    number.className = 'absolute top-4 left-4 z-20 w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center bg-center bg-contain bg-no-repeat drop-shadow-md';
+    number.className = 'absolute top-4 left-4 z-20 w-20 h-20 sm:w-25 sm:h-25 flex items-center justify-center bg-center bg-contain bg-no-repeat drop-shadow-md';
     number.style.backgroundImage = `url('${import.meta.env.BASE_URL}img/icon/momiji.png')`;
 
     const numberText = document.createElement('span');
-    numberText.className = 'text-white font-bold text-sm sm:text-base drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)]';
+    numberText.className = 'text-white font-bold text-2xl sm:text-4xl drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)]';
     numberText.textContent = String(worksData.length - workIndex).padStart(2, '0');
 
     number.appendChild(numberText);
