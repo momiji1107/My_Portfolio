@@ -3,7 +3,7 @@ import { newsList } from '../datas/newsData.js';
 export function initNews(container) {
   const section = document.createElement('section');
   section.id = 'news';
-  section.className = 'w-full min-h-screen items-center justify-center bg-cover bg-center bg-no-repeat';
+  section.className = 'w-full min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat overflow-x-hidden';
   
   section.style.backgroundImage = `url('${import.meta.env.BASE_URL}img/background/momiji_BackGround.png')`;
   section.style.backgroundSize = 'cover';
@@ -50,7 +50,7 @@ export function initNews(container) {
           <div class="flex items-center gap-6">
 
             <!-- アイコン -->
-            <div class="shrink-0 w-24 h-24 flex items-center justify-center">
+            <div class="shrink-0 w-20 h-20 sm:w-24 sm:h-24 flex items-center justify-center">
               <img
                 src="${iconPath}"
                 alt="${news.type}"
@@ -73,7 +73,7 @@ export function initNews(container) {
               <!-- 説明 -->
               ${news.description ? 
                 `
-                <p class="mt-2 text-gray-600">
+                <p class="mt-2 text-gray-600 min-w-0">
                   ${news.description}
                 </p>
                 ` 
