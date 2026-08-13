@@ -1,12 +1,15 @@
-import { defineConfig } from 'vite'
-import tailwindcss from '@tailwindcss/vite'
+import { defineConfig } from 'vite';
+import { resolve } from 'path';
 
-// https://vite.dev/config/
 export default defineConfig({
-  plugins: [
-    tailwindcss(),
-  ],
-  // GitHub Pages用のベースパスを設定
-  // GitHubリポジトリ名をかく
-  base: '/My_Portfolio/',
-})
+  base: './',
+
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+        news: resolve(__dirname, 'news.html'),
+      },
+    },
+  },
+});
