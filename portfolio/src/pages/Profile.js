@@ -50,12 +50,12 @@ export function initProfile(container) {
         </p>
 
         <div class="absolute inset-0 flex flex-col text-left
-        items-center justify-start pt-60 px-15
+        items-center justify-start pt-45 px-15
         sm:items-start sm:justify-center sm:pt-5 sm:pr-35
         lg:pr-60">
           <p class ="text-lg text-neutral-950 font-bold font-mono leading-relaxed pt-0 max-w-3xl z-20
           sm:max-w-[350px] sm:pt-10
-          lg:max-w-[1000px] lg:pt-10"
+          lg:max-w-[1000px]"
           style ="text-shadow: 0px 0px 10px rgb(255, 239, 210);"
           >
             ゲームクリエイターを目指す大学生。<br/>

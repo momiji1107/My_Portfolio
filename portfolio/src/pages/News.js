@@ -3,7 +3,7 @@ import { newsList } from '../datas/newsData.js';
 export function initNews(container) {
   const section = document.createElement('section');
   section.id = 'news';
-  section.className = 'flex items-center justify-center bg-cover bg-center bg-no-repeat overflow-x-hidden';
+  section.className = 'w-full min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat overflow-x-hidden';
   
   section.style.backgroundImage = `url('${import.meta.env.BASE_URL}img/background/momiji_BackGround.png')`;
   section.style.backgroundSize = 'cover';
@@ -44,9 +44,8 @@ export function initNews(container) {
         else if (news.type === 'update') { iconPath = `${import.meta.env.BASE_URL}img/icon/momiji.png`; }
 
         return `<a href="${news.url}" target="_blank" rel="noopener noreferrer"
-        class=" block bg-orange-50 w-100 rounded-3xl px-8 py-4 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-200
-        sm:w-130
-        md:w-180">
+        class="block w-full max-w-3xl min-w-0 bg-orange-50 rounded-3xl px-5 py-4 sm:px-8 sm:py-4 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-200"
+        ">
           <div class="flex items-center gap-6">
 
             <!-- アイコン -->
