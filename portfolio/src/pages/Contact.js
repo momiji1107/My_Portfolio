@@ -47,7 +47,7 @@ export function initContact(container) {
         <!-- 送信先 -->
         <div class="mb-8 ml-2 flex gap-2 text-lg flex-row sm:items-center sm:gap-4">
           <span class="font-bold text-[#59351f]">
-            Dear :
+            Dear 
           </span>
 
           <span class="font-bold text-[#d95f27] break-all">

@@ -27,11 +27,11 @@ export function initHeader() {
           <a href="#news" class="nav-link text-sm font-medium text-white hover:bg-black/50 hover:px-2 hover:py-2 hover:rounded-2xl transition-colors relative py-2" data-page="news">
             おしらせ
           </a>
-          <a href="#skilllevel" class="nav-link text-sm font-medium text-white hover:bg-black/50 hover:px-2 hover:py-2 hover:rounded-2xl transition-colors relative py-2" data-page="skilllevel">
-            スキルセット
-          </a>
           <a href="#works" class="nav-link text-sm font-medium text-white hover:bg-black/50 hover:px-2 hover:py-2 hover:rounded-2xl transition-colors relative py-2" data-page="works">
-            作品集
+            作品一覧
+          </a>
+          <a href="#skillset" class="nav-link text-sm font-medium text-white hover:bg-black/50 hover:px-2 hover:py-2 hover:rounded-2xl transition-colors relative py-2" data-page="skillset">
+            スキルセット
           </a>
           <a href="#mindset" class="nav-link text-sm font-medium text-white hover:bg-black/50 hover:px-2 hover:py-2 hover:rounded-2xl transition-colors relative py-2" data-page="mindset">
             マインドセット
@@ -57,8 +57,8 @@ export function initHeader() {
         <a href="#top" class="block rounded-lg px-3 py-2.5 text-base font-medium text-white hover:bg-neutral-100 hover:text-neutral-900 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-white" data-page="top">トップ</a>
         <a href="#profile" class="block rounded-lg px-3 py-2.5 text-base font-medium text-white hover:bg-neutral-100 hover:text-neutral-900 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-white" data-page="profile">プロフィール</a>
         <a href="#news" class="block rounded-lg px-3 py-2.5 text-base font-medium text-white hover:bg-neutral-100 hover:text-neutral-900 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-white" data-page="news">おしらせ</a>
-        <a href="#skillset" class="block rounded-lg px-3 py-2.5 text-base font-medium text-white hover:bg-neutral-100 hover:text-neutral-900 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-white" data-page="skillset">スキルセット</a>
         <a href="#works" class="block rounded-lg px-3 py-2.5 text-base font-medium text-white hover:bg-neutral-100 hover:text-neutral-900 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-white" data-page="works">作品集</a>
+        <a href="#skillset" class="block rounded-lg px-3 py-2.5 text-base font-medium text-white hover:bg-neutral-100 hover:text-neutral-900 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-white" data-page="skillset">スキルセット</a>
         <a href="#mindset" class="block rounded-lg px-3 py-2.5 text-base font-medium text-white hover:bg-neutral-100 hover:text-neutral-900 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-white" data-page="mindset">マインドセット</a>
         <a href="#contact" class="block rounded-lg px-3 py-2.5 text-base font-medium text-white hover:bg-neutral-100 hover:text-neutral-900 dark:text-neutral-400 dark:hover:bg-neutral-800 dark:hover:text-white" data-page="contact">お問い合わせ</a>
       </div>
