@@ -354,7 +354,7 @@ function createWorkCard(work, workIndex) {
     // 作品タイトル
     // ------------------------------
     const workTitle = document.createElement('h3');
-    workTitle.className = 'relative text-3xl sm:text-4xl font-bold text-stone-800 tracking-wide mb-7 pl-1';
+    workTitle.className = 'relative text-3xl sm:text-4xl font-bold text-stone-800 tracking-wide mb-3 pl-1';
     workTitle.innerHTML = `${work.title}`;
 
     infoArea.appendChild(workTitle);
@@ -364,6 +364,24 @@ function createWorkCard(work, workIndex) {
     titleLine.className = 'w-full h-px bg-gradient-to-r from-orange-400 via-orange-200 to-transparent mb-5';
 
     infoArea.appendChild(titleLine);
+
+    // ------------------------------
+    // 作品タグ
+    // ------------------------------
+    if (work.tags && work.tags.length > 0) {
+      const tagsArea = document.createElement('div');
+      tagsArea.className = 'relative flex flex-wrap items-center gap-2 mb-5';
+
+      work.tags.forEach(tag => {
+        const tagElement = document.createElement('span');
+        tagElement.className = 'px-3 py-1 rounded-full bg-orange-100 border border-orange-300 text-orange-700 text-xs sm:text-sm font-bold whitespace-nowrap';
+        tagElement.textContent = tag;
+
+        tagsArea.appendChild(tagElement);
+      });
+
+      infoArea.appendChild(tagsArea);
+    }
 
     // ------------------------------
     // 基本情報
@@ -405,18 +423,20 @@ function createWorkCard(work, workIndex) {
     // ------------------------------
     // GitHubボタン
     // ------------------------------
-    const githubButton = document.createElement('a');
-    githubButton.href = work.github;
-    githubButton.target = '_blank';
-    githubButton.rel = 'noopener noreferrer';
-    githubButton.className = 'relative w-[200px] mt-auto mx-auto lg:mx-0 px-7 py-3.5 flex items-center justify-center gap-3 rounded-xl bg-orange-500 hover:bg-orange-600 text-white font-bold text-lg shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300';
+    if (work.github) {
+      const githubButton = document.createElement('a');
+      githubButton.href = work.github;
+      githubButton.target = '_blank';
+      githubButton.rel = 'noopener noreferrer';
+      githubButton.className = 'relative w-[200px] mt-auto mx-auto lg:mx-0 px-7 py-3.5 flex items-center justify-center gap-3 rounded-xl bg-orange-500 hover:bg-orange-600 text-white font-bold text-lg shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300';
 
-    githubButton.innerHTML = `
+      githubButton.innerHTML = `
         <span>GitHub</span>
         <span class="text-xl">▶</span>
-    `;
+      `;
 
-    infoArea.appendChild(githubButton);
+      infoArea.appendChild(githubButton);
+    }
 
     // ------------------------------
     // カードに追加

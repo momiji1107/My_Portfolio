@@ -8,9 +8,9 @@ export const worksData = [
         images: [
             'img/works/slimehero1.png',
             'img/works/slimehero2.png',
-            'img/works/slimehero3.png',
-            'img/works/slimehero4.png'
+            'img/works/slimehero3.png'
         ],
+        tags: ['2D', 'シューティング', 'ローグライク'],
         github: 'https://github.com/momiji1107/Minge2026Spring_Team2'
     },
 
@@ -23,7 +23,8 @@ export const worksData = [
         images: [
             'img/works/noimage.jpg'
         ],
-        github: 'https://github.com/PandD-Aizu/Minge2025Summer_Team3'
+        tags: ['3D', 'ホラー', 'ランダムマップ'],
+        github: ''
     },
 
     {
@@ -35,7 +36,8 @@ export const worksData = [
         images: [
             'img/works/puzzleknights2.png'
         ],
-        github: 'https://github.com/PandD-Aizu/Minge2025Spring_Team1'
+        tags: ['タワーディフェンス', 'ダークファンタジー'],
+        github: ''
     },
 
     {
@@ -51,6 +53,7 @@ export const worksData = [
             'img/works/lostofmusic4.png',
             'img/works/lostofmusic5.png'
         ],
-        github: 'https://github.com/PandD-Aizu/Minge2024Summer_Team5'
+        tags: ['2D', 'アクション'],
+        github: ''
     }
 ];
