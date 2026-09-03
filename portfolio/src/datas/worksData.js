@@ -24,7 +24,7 @@ export const worksData = [
             'img/works/noimage.jpg'
         ],
         tags: ['3D', 'ホラー', 'ランダムマップ'],
-        github: ''
+        github: 'https://github.com/PandD-Aizu/Minge2025Summer_Team3'
     },
 
     {
@@ -32,12 +32,12 @@ export const worksData = [
         period: '約6ヶ月',
         members: '8人',
         roles: 'プログラミング / ステージデザイン / UI設計',
-        description: 'ダークファンタジーな世界観のタワーディフェンスゲームです。敵を倒して得た資源を使って、より強力な仲間を配置し、敵の進軍を止めることを目指します。',
+        description: 'ダークファンタジーな世界観のタワーディフェンスゲームです。敵を倒して得た資源を使ってより強力な仲間を配置し、敵の進軍を食い止めます。',
         images: [
             'img/works/puzzleknights2.png'
         ],
         tags: ['タワーディフェンス', 'ダークファンタジー'],
-        github: ''
+        github: 'https://github.com/PandD-Aizu/Minge2025Spring_Team1'
     },
 
     {
@@ -45,7 +45,7 @@ export const worksData = [
         period: '約4ヶ月',
         members: '6人',
         roles: 'プログラミング / ギミック考案 / ステージデザイン / UI設計',
-        description: '初めてのチーム開発で制作した2Dアクションゲームです。主人公は音楽を失った世界を旅しながら、楽器を使ってギミックを動かしたり、敵を倒したりすることが求められます。物語と融合した音楽が独自の体験を提供します。',
+        description: '初めてのチーム開発で制作した2Dアクションゲームです。主人公は音楽を失った世界を旅しながら、多様な楽器を使ってギミックを動かしたり、敵を倒したりすることが求められます。物語と融合した音楽が独自の体験を提供します。',
         images: [
             'img/works/lostofmusic1.jpeg',
             'img/works/lostofmusic2.png',
@@ -54,6 +54,6 @@ export const worksData = [
             'img/works/lostofmusic5.png'
         ],
         tags: ['2D', 'アクション'],
-        github: ''
+        github: 'https://github.com/PandD-Aizu/Minge2024Summer_Team5'
     }
 ];
