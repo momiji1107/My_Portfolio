@@ -2,7 +2,7 @@ export const newsList = [
     {
         date: '2026.09.03',
         type: 'youtube',
-        title: 'を投稿しました。',
+        title: '自主制作ゲーム『春みんげ〜2026作品』PV | PandDを投稿しました。',
         description: '春みんげ〜2026で制作した４つのゲームのPV動画です。これらの作品は夏コミ(コミックマーケット108)にて配布しました。',
         url: 'https://youtu.be/_2I43i6J1e8'
     },
