@@ -31,7 +31,7 @@ export const skillCategories = [
             {
                 name: 'C',
                 icon: `${import.meta.env.BASE_URL}img/icon/c.png`,
-                level: 1,
+                level: 2,
                 description: '授業でのC言語の学習を通して、プログラミングを基礎を学んでいます。'
             },
             {
