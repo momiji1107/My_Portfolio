@@ -14,7 +14,7 @@ export function initTop(container) {
       <!-- バージョン表記 -->
       <p class="absolute top-20 left-6 text-lg font-serif font-bold text-white"
       style="text-shadow: 2px 2px 4px rgba(0,0,0,1);">
-        ver. 0.1.0
+        ver. 1.0.0
       </p>
 
       <h2 class="text-7xl font-serif font-bold tracking-tight mb-1 text-white"
