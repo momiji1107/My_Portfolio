@@ -21,7 +21,11 @@ export const worksData = [
         roles: 'プログラミング / 敵の行動処理実装 / ゲームシステム設計 / カメラ制御 / ステージデザイン',
         description: '行方不明者が続出するトンネルを探索する3Dホラーゲームです。トンネル内はランダムに生成された地形となっており、徘徊するゾンビと戦いながら脱出を目指します。限られた銃弾をやりくりする緊張感と音響・映像による恐怖演出が特徴です。',
         images: [
-            'img/works/noimage.jpg'
+            'img/works/shinzui1.png',
+            'img/works/shinzui2.png',
+            'img/works/shinzui3.png',
+            'img/works/shinzui4.png',
+            'img/works/shinzui5.png'
         ],
         tags: ['3D', 'ホラー', 'ランダムマップ'],
         github: 'https://github.com/PandD-Aizu/Minge2025Summer_Team3'
@@ -34,7 +38,7 @@ export const worksData = [
         roles: 'プログラミング / ステージデザイン / UI設計',
         description: 'ダークファンタジーな世界観のタワーディフェンスゲームです。敵を倒して得た資源を使ってより強力な仲間を配置し、敵の進軍を食い止めます。',
         images: [
-            'img/works/puzzleknights2.png'
+            'img/works/puzzleknights1.png'
         ],
         tags: ['タワーディフェンス', 'ダークファンタジー'],
         github: 'https://github.com/PandD-Aizu/Minge2025Spring_Team1'
