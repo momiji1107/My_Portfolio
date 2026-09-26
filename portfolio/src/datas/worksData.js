@@ -1,5 +1,18 @@
 export const worksData = [
     {
+        title: 'Voxel Editor',
+        period: '一週間',
+        members: '1人',
+        roles: 'プログラミング / 仕様設計 / デバッグ',
+        description: 'Unityで3Dモデルをマインクラフトのようにボクセル空間に配置することができるエディタです。サイズの異なるボクセルモデルの配置や削除など、基本的な操作を直感的に行うことができ、簡単にボクセル型のステージを作成することができます。',
+        images: [
+            'img/works/noimage.jpg'
+        ],
+        tags: ['Unity', 'エディター', 'ボクセル'],
+        github: 'https://github.com/momiji1107/VoxelEditor'
+    },
+    
+    {
         title: 'スライムヒーロー',
         period: '約5ヶ月',
         members: '7人',
@@ -35,12 +48,16 @@ export const worksData = [
         title: 'パズルナイツ',
         period: '約6ヶ月',
         members: '8人',
-        roles: 'プログラミング / ステージデザイン / UI設計',
+        roles: 'プログラミング / ステージデザイン / UI設計 / パズル実装',
         description: 'ダークファンタジーな世界観のタワーディフェンスゲームです。敵を倒して得た資源を使ってより強力な仲間を配置し、敵の進軍を食い止めます。',
         images: [
-            'img/works/puzzleknights1.png'
+            'img/works/puzzleknights1.png',
+            'img/works/puzzleknights2.png',
+            'img/works/puzzleknights3.png',
+            'img/works/puzzleknights4.png',
+            'img/works/puzzleknights5.png'
         ],
-        tags: ['タワーディフェンス', 'ダークファンタジー'],
+        tags: ['タワーディフェンス', 'パズル', 'ダークファンタジー'],
         github: 'https://github.com/PandD-Aizu/Minge2025Spring_Team1'
     },
 
@@ -51,13 +68,13 @@ export const worksData = [
         roles: 'プログラミング / ギミック考案 / ステージデザイン / UI設計',
         description: '初めてのチーム開発で制作した2Dアクションゲームです。主人公は音楽を失った世界を旅しながら、多様な楽器を使ってギミックを動かしたり、敵を倒したりすることが求められます。物語と融合した音楽が独自の体験を提供します。',
         images: [
-            'img/works/lostofmusic1.jpeg',
+            'img/works/lostofmusic1.png',
             'img/works/lostofmusic2.png',
             'img/works/lostofmusic3.png',
             'img/works/lostofmusic4.png',
             'img/works/lostofmusic5.png'
         ],
-        tags: ['2D', 'アクション'],
+        tags: ['2D', 'アクション', 'アドベンチャー'],
         github: 'https://github.com/PandD-Aizu/Minge2024Summer_Team5'
     }
 ];
