@@ -65,6 +65,12 @@ export const skillCategories = [
                 icon: `${import.meta.env.BASE_URL}img/icon/blender.png`,
                 level: 2,
                 description: 'ゲーム制作に必要な3Dモデルや素材の制作に使用しています。'
+            },
+            {
+                name: 'Canva',
+                icon: `${import.meta.env.BASE_URL}img/icon/canva.png`,
+                level: 2,
+                description: 'UIデザインや企画書の作成に使用しています。'
             }
         ]
     },

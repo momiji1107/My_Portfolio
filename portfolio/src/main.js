@@ -6,7 +6,7 @@ import { initTop } from './pages/Top.js'
 import { initProfile } from './pages/Profile.js'
 import { initNews } from './pages/News.js'
 import { initWorks } from './pages/Works.js'
-import { initSkillLevel } from './pages/SkillLevel.js'
+// import { initSkillLevel } from './pages/SkillLevel.js'
 import { initSkillSet } from './pages/SkillSet.js'
 import { initMindSet } from './pages/MindSet.js'
 import { initContact } from './pages/Contact.js'
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initProfile(main);
   initNews(main);
   initWorks(main);
-  initSkillLevel(main);
+  // initSkillLevel(main);
   initSkillSet(main);
   initMindSet(main);
   initContact(main);
