@@ -1,5 +1,12 @@
 export const newsList = [
     {
+        date: '2026.09.27',
+        type: 'update',
+        title: '「作品一覧」に「Voxel Editor」を追加しました。',
+        description: '',
+        url: ''
+    },
+    {
         date: '2026.09.03',
         type: 'youtube',
         title: '自主制作ゲーム『春みんげ〜2026』作品PV | PandDを投稿しました。',
