@@ -1,12 +1,33 @@
 export const worksData = [
     {
+        title: '深隧 -Shinzui- リメイク',
+        period: '約5ヶ月',
+        members: '6人',
+        roles: 'プログラミング / 敵の行動処理実装 / セーブシステム / アイテム実装',
+        description: '過去に制作した3Dホラーゲームのリメイク版です。ゲームシステムを見直し、ゲームの世界観をよりリアルに体験できるよう改良しています。3Dモデルや演出も一新し、迫力のある恐怖感を提供します。',
+        images: [
+            'img/works/shinzuiremake1.png',
+            'img/works/shinzuiremake2.png',
+            'img/works/shinzuiremake3.png',
+            'img/works/shinzuiremake4.png',
+            'img/works/shinzuiremake5.png'
+        ],
+        tags: ['3D', 'ホラー', 'アドベンチャー', 'ランダムマップ'],
+        github: ''
+    },
+
+    {
         title: 'Voxel Editor',
         period: '一週間',
         members: '1人',
         roles: 'プログラミング / 仕様設計 / デバッグ',
         description: 'Unityで3Dモデルをマインクラフトのようにボクセル空間に配置することができるエディタです。サイズの異なるボクセルモデルの配置や削除など、基本的な操作を直感的に行うことができ、簡単にボクセル型のステージを作成することができます。',
         images: [
-            'img/works/noimage.jpg'
+            'img/works/voxeleditor1.png',
+            'img/works/voxeleditor2.png',
+            'img/works/voxeleditor3.png',
+            'img/works/voxeleditor4.png',
+            'img/works/voxeleditor5.png'
         ],
         tags: ['Unity', 'エディター', 'ボクセル'],
         github: 'https://github.com/momiji1107/VoxelEditor'
@@ -40,7 +61,7 @@ export const worksData = [
             'img/works/shinzui4.png',
             'img/works/shinzui5.png'
         ],
-        tags: ['3D', 'ホラー', 'ランダムマップ'],
+        tags: ['3D', 'ホラー', 'FPS', 'ランダムマップ'],
         github: 'https://github.com/PandD-Aizu/Minge2025Summer_Team3'
     },
 
@@ -68,7 +89,7 @@ export const worksData = [
         roles: 'プログラミング / ギミック考案 / ステージデザイン / UI設計',
         description: '初めてのチーム開発で制作した2Dアクションゲームです。主人公は音楽を失った世界を旅しながら、多様な楽器を使ってギミックを動かしたり、敵を倒したりすることが求められます。物語と融合した音楽が独自の体験を提供します。',
         images: [
-            'img/works/lostofmusic1.png',
+            'img/works/lostofmusic1.jpeg',
             'img/works/lostofmusic2.png',
             'img/works/lostofmusic3.png',
             'img/works/lostofmusic4.png',
