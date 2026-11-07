@@ -14,7 +14,7 @@ export const skillCategories = [
                 name: 'Java',
                 icon: `${import.meta.env.BASE_URL}img/icon/java.png`,
                 level: 3,
-                description: '授業でのプログラミングを通して、Javaの基礎を学んでいます。'
+                description: '授業でのJavaの学習を通して、オブジェクト指向の基礎を学びました。'
             },
             {
                 name: 'HTML',
@@ -26,19 +26,31 @@ export const skillCategories = [
                 name: 'CSS',
                 icon: `${import.meta.env.BASE_URL}img/icon/css.png`,
                 level: 2,
-                description: 'Tailwind CSSなどを使用してWebページのデザインを制作しています。'
+                description: 'Tailwind CSSなどを使用して、Webページのデザインを制作しています。'
             },
             {
                 name: 'C',
                 icon: `${import.meta.env.BASE_URL}img/icon/c.png`,
                 level: 2,
-                description: '授業でのC言語の学習を通して、プログラミングを基礎を学んでいます。'
+                description: '授業でのC言語の学習を通して、プログラミングの基礎を学びました。'
+            },
+            {
+                name: 'C++',
+                icon: `${import.meta.env.BASE_URL}img/icon/c++.jpeg`,
+                level: 2,
+                description: '授業を通して、C++の基礎を学んでいます。'
             },
             {
                 name: 'JavaScript',
                 icon: `${import.meta.env.BASE_URL}img/icon/javascript.png`,
                 level: 1,
                 description: 'Webページのインタラクティブな機能を実装するために使用しています。'
+            },
+            {
+                name: 'Assembly',
+                icon: `${import.meta.env.BASE_URL}img/icon/assembly.jpg`,
+                level: 1,
+                description: '授業での学習を通じて、アセンブリ言語の基礎を学びました。'
             }
         ]
     },
@@ -116,19 +128,19 @@ export const skillCategories = [
                 name: 'GitHub',
                 icon: `${import.meta.env.BASE_URL}img/icon/github.png`,
                 level: 4,
-                description: 'チーム開発でのバージョン管理やポートフォリオのソースコード管理に使用しています。'
+                description: 'チーム開発でのバージョン管理や、プログラミング課題のソースコード管理に使用しています。'
             },
             {
                 name: 'Notion',
                 icon: `${import.meta.env.BASE_URL}img/icon/notion.png`,
                 level: 3,
-                description: '制作物の情報整理やタスク管理などに使用しています。'
+                description: 'プログラミング知識のまとめや、制作のタスク管理などに使用しています。'
             },
             {
                 name: 'HackMD',
                 icon: `${import.meta.env.BASE_URL}img/icon/hackmd.png`,
                 level: 3,
-                description: 'チーム開発での情報整理などに使用しています。'
+                description: 'チーム開発での議事録制作などに使用しています。'
             }
         ]
     }

@@ -61,7 +61,8 @@ export function initProfile(container) {
             ゲームクリエイターを目指す大学生。<br/>
             幼い頃から"ものづくり"が大好きで、現在はその情熱をゲーム制作に注いでいる。<br/>
             新しい体験へのわくわくと心に残る想い出を届けたい。<br/>
-            好きな食べ物はお寿司。
+            好きな食べ物はお寿司とパスタ。<br/>
+            #GameDesign #Unity #Programming
           </p>
         </div>
 
