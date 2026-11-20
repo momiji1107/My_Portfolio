@@ -1,5 +1,12 @@
 export const newsList = [
     {
+        date: '2026.11.07',
+        type: 'update',
+        title: '「作品一覧」に「深隧 -Shinzui- リメイク」を追加しました。',
+        description: '',
+        url: ''
+    },
+    {
         date: '2026.09.27',
         type: 'update',
         title: '「作品一覧」に「Voxel Editor」を追加しました。',
