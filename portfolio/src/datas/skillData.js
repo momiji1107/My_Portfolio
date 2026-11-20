@@ -13,7 +13,7 @@ export const skillCategories = [
             {
                 name: 'Java',
                 icon: `${import.meta.env.BASE_URL}img/icon/java.png`,
-                level: 3,
+                level: 2,
                 description: '授業でのJavaの学習を通して、オブジェクト指向の基礎を学びました。'
             },
             {

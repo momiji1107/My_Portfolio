@@ -42,7 +42,8 @@ export const worksData = [
         images: [
             'img/works/slimehero1.png',
             'img/works/slimehero2.png',
-            'img/works/slimehero3.png'
+            'img/works/slimehero3.png',
+            'img/works/slimehero4.png'
         ],
         tags: ['2D', 'シューティング', 'ローグライク'],
         github: 'https://github.com/momiji1107/Minge2026Spring_Team2'
@@ -89,11 +90,13 @@ export const worksData = [
         roles: 'プログラミング / ギミック考案 / ステージデザイン / UI設計',
         description: '初めてのチーム開発で制作した2Dアクションゲームです。主人公は音楽を失った世界を旅しながら、多様な楽器を使ってギミックを動かしたり、敵を倒したりすることが求められます。物語と融合した音楽が独自の体験を提供します。',
         images: [
-            'img/works/lostofmusic1.jpeg',
+            'img/works/lostofmusic1.png',
             'img/works/lostofmusic2.png',
             'img/works/lostofmusic3.png',
             'img/works/lostofmusic4.png',
-            'img/works/lostofmusic5.png'
+            'img/works/lostofmusic5.png',
+            'img/works/lostofmusic6.png',
+            'img/works/lostofmusic7.png'
         ],
         tags: ['2D', 'アクション', 'アドベンチャー'],
         github: 'https://github.com/PandD-Aizu/Minge2024Summer_Team5'
