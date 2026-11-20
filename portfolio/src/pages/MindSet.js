@@ -17,7 +17,7 @@ const mindsetList = [
     {
         number: '04',
         title: '好奇心とチャレンジ精神',
-        text: '新しい技術や経験に対する好奇心が強く、興味を持ったことに積極的に挑戦します。学びと成長への貪欲さとフットワークの軽さに自信があります。'
+        text: '新しい技術や経験に対する好奇心が強く、興味を持ったことに積極的に挑戦します。学びと成長への貪欲さと、フットワークの軽さに自信があります。'
     },
     {
         number: '05',
@@ -85,7 +85,7 @@ export function initMindSet(container) {
         ${mindset.title}
       </h3>
 
-      <p class="text-base sm:text-lg leading-8 sm:leading-9 tracking-wide text-neutral-800">
+      <p class="text-base font-bold sm:text-lg leading-8 sm:leading-9 tracking-wide text-neutral-800">
         ${mindset.text}
       </p>
     `;
