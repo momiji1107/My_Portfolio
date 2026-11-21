@@ -20,7 +20,7 @@ export const skillCategories = [
                 name: 'HTML',
                 icon: `${import.meta.env.BASE_URL}img/icon/html.png`,
                 level: 2,
-                description: 'ポートフォリオサイトなどのWebページ制作に使用しています。'
+                description: 'ポートフォリオサイトなどのWebページや、授業でのシステム画面制作に使用しています。'
             },
             {
                 name: 'CSS',

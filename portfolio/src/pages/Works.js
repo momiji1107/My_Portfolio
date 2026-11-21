@@ -5,7 +5,7 @@ export function initWorks(container) {
   section.id = 'works';
   section.className = 'w-full flex flex-col items-center justify-start bg-cover bg-center bg-no-repeat pb-16';
   
-  section.style.backgroundImage = `url('${import.meta.env.BASE_URL}img/background/momiji_BackGround.png')`;
+  section.style.backgroundImage = `url('${import.meta.env.BASE_URL}img/background/momiji_BackGround.webp')`;
   section.style.backgroundSize = 'cover';
   section.style.backgroundPosition = 'center';
   section.style.backgroundRepeat = 'no-repeat';
@@ -235,33 +235,52 @@ function createWorkCard(work, workIndex) {
     card.className = 'relative w-[88vw] sm:w-[86vw] lg:w-[84vw] h-auto shrink-0 snap-center bg-white/90 rounded-3xl shadow-[0_10px_35px_rgba(80,40,10,0.25)] border border-orange-200 overflow-hidden';
 
     // ------------------------------
-    // 作品番号
+    // 作品番号・タイトル
     // ------------------------------
+    const workHeader = document.createElement('div');
+    workHeader.className = 'absolute top-4 left-4 z-20 flex items-center gap-0 sm:gap-3 max-w-[calc(100%-2rem)]';
+
+    // 作品番号
     const number = document.createElement('div');
-    number.className = 'absolute top-4 left-4 z-20 w-20 h-20 sm:w-25 sm:h-25 flex items-center justify-center bg-center bg-contain bg-no-repeat drop-shadow-md';
+    number.className = 'shrink-0 w-20 h-20 sm:w-22 sm:h-22 lg:w-25 lg:h-25 flex items-center justify-center bg-center bg-contain bg-no-repeat drop-shadow-md';
     number.style.backgroundImage = `url('${import.meta.env.BASE_URL}img/icon/momiji.png')`;
 
     const numberText = document.createElement('span');
-    numberText.className = 'text-white font-bold text-2xl sm:text-4xl drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)]';
+    numberText.className = 'text-white font-bold text-2xl sm:text-3xl lg:text-4xl drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)]';
     numberText.textContent = String(worksData.length - workIndex).padStart(2, '0');
 
     number.appendChild(numberText);
-    card.appendChild(number);
+
+    // 作品タイトル
+    const titleLabel = document.createElement('div');
+    titleLabel.className = 'min-w-0 max-w-full px-4 py-2 rounded-xl bg-[#000000]/40 shadow-lg';
+
+    const titleText = document.createElement('h3');
+    titleText.className = 'text-white font-bold text-2xl sm:text-3xl lg:text-4xl leading-snug drop-shadow-md break-words';
+    titleText.textContent = work.title;
+
+    titleLabel.appendChild(titleText);
+
+    // ヘッダーに追加
+    workHeader.appendChild(number);
+    workHeader.appendChild(titleLabel);
+
+    card.appendChild(workHeader);
 
     // ------------------------------
     // カード内部
     // ------------------------------
     const cardContent = document.createElement('div');
-    cardContent.className = 'flex flex-col lg:flex-row h-full';
+    cardContent.className = 'flex flex-col h-full';
 
     // ==================================================
     // 左側：画像スライド
     // ==================================================
     const imageArea = document.createElement('div');
-    imageArea.className = 'relative w-full min-h-[300px] lg:w-3/5 lg:h-full bg-stone-900 overflow-hidden';
+    imageArea.className = 'relative w-full aspect-[16/9] self-start bg-stone-900 overflow-hidden shrink-0';
 
     const image = document.createElement('img');
-    image.className = 'absolute inset-0 w-full h-full object-cover transition-opacity duration-700';
+    image.className = 'absolute inset-0 w-full h-full object-contain transition-opacity duration-700';
 
     let currentImageIndex = 0;
 
@@ -342,28 +361,13 @@ function createWorkCard(work, workIndex) {
     // 右側：作品情報
     // ==================================================
     const infoArea = document.createElement('div');
-    infoArea.className = 'relative w-full lg:w-2/5 h-full p-7 sm:p-9 lg:p-12 bg-[#fffaf0] flex flex-col';
+    infoArea.className = 'relative w-full h-full p-7 sm:p-9 lg:p-12 bg-[#fffaf0] flex flex-col';
 
     // 紙のような装飾
     const paperDecoration = document.createElement('div');
     paperDecoration.className = 'absolute inset-3 border border-orange-200/70 rounded-2xl pointer-events-none';
 
     infoArea.appendChild(paperDecoration);
-
-    // ------------------------------
-    // 作品タイトル
-    // ------------------------------
-    const workTitle = document.createElement('h3');
-    workTitle.className = 'relative text-3xl sm:text-4xl font-bold text-stone-800 tracking-wide mb-3 pl-1';
-    workTitle.innerHTML = `${work.title}`;
-
-    infoArea.appendChild(workTitle);
-
-    // 区切り線
-    const titleLine = document.createElement('div');
-    titleLine.className = 'w-full h-px bg-gradient-to-r from-orange-400 via-orange-200 to-transparent mb-5';
-
-    infoArea.appendChild(titleLine);
 
     // ------------------------------
     // 作品タグ

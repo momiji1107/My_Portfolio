@@ -3,7 +3,7 @@ export function initProfile(container) {
   section.id = 'profile';
   section.className = 'relative w-full min-h-[500px] flex items-center justify-center bg-cover bg-center bg-no-repeat';
   
-  section.style.backgroundImage = `url('${import.meta.env.BASE_URL}img/background/momiji_BackGround.png')`;
+  section.style.backgroundImage = `url('${import.meta.env.BASE_URL}img/background/momiji_BackGround.webp')`;
   section.style.backgroundSize = 'cover';
   section.style.backgroundPosition = 'center';
   section.style.backgroundRepeat = 'no-repeat';
@@ -23,7 +23,7 @@ export function initProfile(container) {
       >
 
       <img
-        src="${import.meta.env.BASE_URL}img/background/paper3_BackGround.png"
+        src="${import.meta.env.BASE_URL}img/background/paper3_BackGround.webp"
         alt="横向きの細長い紙の背景"
         class="w-full h-auto hidden lg:block"
       >
@@ -58,7 +58,7 @@ export function initProfile(container) {
           lg:max-w-[1000px]"
           style ="text-shadow: 0px 0px 10px rgb(255, 239, 210);"
           >
-            ゲームクリエイターを目指す大学生。<br/>
+            ゲームクリエイターになるため日々勉強中。<br/>
             幼い頃から"ものづくり"が大好きで、現在はその情熱をゲーム制作に注いでいる。<br/>
             新しい体験へのわくわくと心に残る想い出を届けたい。<br/>
             好きな食べ物はお寿司とパスタ。<br/>
