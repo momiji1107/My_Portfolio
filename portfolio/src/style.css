@@ -6,3 +6,9 @@
     scroll-padding-top: 4rem;
   }
 }
+
+html,
+body,
+* {
+    cursor: url("/My_Portfolio/img/icon/pawpads.png") 16 5, auto !important;
+}

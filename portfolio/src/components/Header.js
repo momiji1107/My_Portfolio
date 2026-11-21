@@ -28,25 +28,25 @@ export function initHeader() {
 
         <!-- ナビゲーションリンク -->
         <nav class="hidden md:flex items-center gap-8">
-          <a href="#top" class="nav-link text-sm font-medium text-white hover:bg-black/50 hover:px-2 hover:py-2 hover:rounded-2xl transition-colors relative py-2" data-page="top">
+          <a href="#top" class="nav-link text-sm font-medium text-white hover:font-bold transition-colors relative py-2" data-page="top">
             トップ
           </a>
-          <a href="#profile" class="nav-link text-sm font-medium text-white hover:bg-black/50 hover:px-2 hover:py-2 hover:rounded-2xl transition-colors relative py-2" data-page="profile">
+          <a href="#profile" class="nav-link text-sm font-medium text-white hover:font-bold transition-colors relative py-2" data-page="profile">
             プロフィール
           </a>
-          <a href="#news" class="nav-link text-sm font-medium text-white hover:bg-black/50 hover:px-2 hover:py-2 hover:rounded-2xl transition-colors relative py-2" data-page="news">
+          <a href="#news" class="nav-link text-sm font-medium text-white hover:font-bold transition-colors relative py-2" data-page="news">
             おしらせ
           </a>
-          <a href="#works" class="nav-link text-sm font-medium text-white hover:bg-black/50 hover:px-2 hover:py-2 hover:rounded-2xl transition-colors relative py-2" data-page="works">
+          <a href="#works" class="nav-link text-sm font-medium text-white hover:font-bold transition-colors relative py-2" data-page="works">
             作品一覧
           </a>
-          <a href="#skillset" class="nav-link text-sm font-medium text-white hover:bg-black/50 hover:px-2 hover:py-2 hover:rounded-2xl transition-colors relative py-2" data-page="skillset">
+          <a href="#skillset" class="nav-link text-sm font-medium text-white hover:font-bold transition-colors relative py-2" data-page="skillset">
             スキルセット
           </a>
-          <a href="#mindset" class="nav-link text-sm font-medium text-white hover:bg-black/50 hover:px-2 hover:py-2 hover:rounded-2xl transition-colors relative py-2" data-page="mindset">
+          <a href="#mindset" class="nav-link text-sm font-medium text-white hover:font-bold transition-colors relative py-2" data-page="mindset">
             マインドセット
           </a>
-          <a href="#contact" class="nav-link text-sm font-medium text-white hover:bg-black/50 hover:px-2 hover:py-2 hover:rounded-2xl transition-colors relative py-2" data-page="contact">
+          <a href="#contact" class="nav-link text-sm font-medium text-white hover:font-bold transition-colors relative py-2" data-page="contact">
             お問い合わせ
           </a>
         </nav>

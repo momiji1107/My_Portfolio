@@ -3,13 +3,13 @@ export function initTop(container) {
   section.id = 'top';
   section.className = 'w-full min-h-screen flex items-center justify-center pt-130 bg-cover bg-center bg-no-repeat';
   
-  section.style.backgroundImage = `url('${import.meta.env.BASE_URL}img/profile/koma_top.png')`;
+  section.style.backgroundImage = `url('${import.meta.env.BASE_URL}img/profile/koma_top.webp')`;
   section.style.backgroundSize = 'cover';
   section.style.backgroundPosition = 'center';
   section.style.backgroundRepeat = 'no-repeat';
 
   section.innerHTML = `
-    <div class="max-w-3xl text-center px-4">
+    <div class="max-w-3xl text-center px-4 h-full flex flex-col justify-end pb-40">
 
       <!-- バージョン表記 -->
       <p class="absolute top-20 left-6 text-lg font-serif font-bold text-white"

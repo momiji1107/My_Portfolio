@@ -5,7 +5,7 @@ export function initNewsAll(container) {
   section.id = 'news-all';
   section.className = 'w-full min-h-screen flex flex-col items-center bg-cover bg-center bg-no-repeat px-4 py-16';
 
-  section.style.backgroundImage = `url('${import.meta.env.BASE_URL}img/background/momiji_BackGround.png')`;
+  section.style.backgroundImage = `url('${import.meta.env.BASE_URL}img/background/momiji_BackGround.webp')`;
   section.style.backgroundSize = 'cover';
   section.style.backgroundPosition = 'center';
   section.style.backgroundRepeat = 'no-repeat';

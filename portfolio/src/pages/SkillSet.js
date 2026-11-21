@@ -6,7 +6,7 @@ export function initSkillSet(container) {
     section.id = 'skillset';
     section.className = 'w-full min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat py-16 px-4 sm:px-6 lg:px-10';
 
-    section.style.backgroundImage = `url('${import.meta.env.BASE_URL}img/background/momiji_BackGround.png')`;
+    section.style.backgroundImage = `url('${import.meta.env.BASE_URL}img/background/momiji_BackGround.webp')`;
     section.style.backgroundSize = 'cover';
     section.style.backgroundPosition = 'center';
     section.style.backgroundRepeat = 'no-repeat';

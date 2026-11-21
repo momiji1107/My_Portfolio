@@ -6,8 +6,8 @@ const mindsetList = [
     },
     {
         number: '02',
-        title: '心に残る体験を届ける',
-        text: '楽しいだけでなく、感動や共感、時には切なさまで、心を動かす体験を届けたい。数年後もふとした瞬間に思い出して心癒されるような、思い出と結びつくゲームを目指します。'
+        title: '想い出に残る体験を届ける',
+        text: 'ゲーム自体だけでなく、ゲームをプレイした時の環境や一緒に遊んだ人のことなど、数年後もふとした瞬間に思い出して心癒されるような、思い出と結びつくゲームを目指します。'
     },
     {
         number: '03',
@@ -22,7 +22,7 @@ const mindsetList = [
     {
         number: '05',
         title: 'チームで最高をつくる',
-        text: '仲間との信頼や対話を大切にし、それぞれの強みを活かし合うことで、一人ではつくれない最高のゲームを生み出します。積極的なアイデアの発信とお互いの意見の尊重を意識しています。'
+        text: '仲間との信頼や対話を大切にし、それぞれの強みを活かし合うことで、一人ではつくれない最高のゲームを生み出します。積極的なアイデアの発信とお互いの意見の尊重を大切にしています。'
     }
 ];
 
@@ -31,7 +31,7 @@ export function initMindSet(container) {
   section.id = 'mindset';
   section.className = 'relative w-full min-h-screen flex items-center justify-center py-10 pb-20 bg-cover bg-center bg-no-repeat';
   
-  section.style.backgroundImage = `url('${import.meta.env.BASE_URL}img/background/momiji_BackGround.png')`;
+  section.style.backgroundImage = `url('${import.meta.env.BASE_URL}img/background/momiji_BackGround.webp')`;
   section.style.backgroundSize = 'cover';
   section.style.backgroundPosition = 'center';
   section.style.backgroundRepeat = 'no-repeat';
